@@ -18,7 +18,7 @@ def CNN_LSTM():
    #Batch Normalization Layer 2
     model.add(BatchNormalization())
    #Max-Pooling 2D Layer 2
-    model.add(layers.MaxPooling2D(kernek_size=(1,2), pool_size=(2, 2))
+    model.add(layers.MaxPooling2D(kernel_size=(1,2), pool_size=(2, 2))
 
    #Flattening Layer
     model.add(Flatten())
