@@ -27,18 +27,7 @@ def download_map(country_code, state_name, modis_collection='006/MOD13A1', num_p
 
     return {k[11:] : np.array([sample[k] for sample in sampled_pixels]) for k in sampled_pixels[0]}
 
-test_name = 'Bahr al Jabal'
-results = download_map('SSD', test_name, num_pixels=5000)
-for k, v in results.items():
-    print(k, v)
 
-import matplotlib.pyplot as plt
-
-for i, (k, v) in enumerate(results.items()):
-    plt.subplot(6, 2, i + 1)
-    plt.title(k)
-    plt.hist(v, bins='auto')
-plt.show()
 
 #image_name = '2022_04_23_NDVI'
 #pixel_value_2022_04_23_NDVI_list = []
@@ -59,5 +48,3 @@ plt.show()
 ## histogram for NDVI layer for image of 2022-04-23
 #plt.hist(pixel_value_2022_04_23_NDVI_list, bins=32)
 #
-
-
