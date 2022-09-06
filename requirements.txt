@@ -32,3 +32,5 @@ geemap
 ee
 pyshp
 tensorflow
+sklearn
+zstandard
