@@ -1,59 +1,60 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import ee
-import geemap
-from ee import ImageCollection
-
+import collections
+from datetime import date, timedelta
 import os
+
+import ee
+from ee import ImageCollection
+import geemap
 import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
 
-
-def download_map(county_name):
-    ee.Authenticate()
-    ee.Initialize()
+def download_map(country_code,
+                 state_name,
+                 date_range=('2021-01-01','2022-12-30'),
+                 modis_collection='006/MOD13A1',
+                 num_pixels=5000):
     Map = geemap.Map()
-    counties_shp = '../raw_data/gadm41_SSD_shp/gadm41_SSD_2.shp'
-    ee_shape = geemap.shp_to_ee(counties_shp)
-    ee_shape.getInfo()
-    county_ee = ee_shape.filter(ee.Filter.eq("NAME_2", county_name))
-    Map.addLayer(county_ee.geometry())
+    states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
+    ee_shape = geemap.shp_to_ee(states_shp)
+    state_ee = ee_shape.filter(ee.Filter.eq("NAME_2", state_name))
+    Map.addLayer(state_ee.geometry())
 
-    start_date = '2022-04-20'
-    end_date = '2022-05-04'
-    MODIS_layer = 'MOD13A1'  #(high to low resolution: MOD13Q1 MOD13A1 MOD13A2)
-    image_collection = ee.ImageCollection(f'MODIS/006/{MODIS_layer}').filter(ee.Filter.date(start_date,end_date)).select(['NDVI']).toBands()
+    image_collection = ee.ImageCollection(f'MODIS/{modis_collection}').filter(ee.Filter.date(*date_range)).toBands()
 
-    region = county_ee.geometry()
+    region = state_ee.geometry()
 
-    sampled_pixels  = image_collection.sample(region, scale=300 , numPixels=5000)
+    samples = image_collection.sample(region, scale=300 , numPixels=num_pixels)
 
-    pixel_values = sampled_pixels.getInfo()['features'][3]['properties']['2022_04_23_NDVI']
-    print(pixel_values)
+    features = samples.getInfo()['features']
 
-test_name = 'Bahr al Jabal'
+    data = []
+    for feature_set in features:
+        for k, v in feature_set['properties'].items():
+            date, property_name = k[:10], k[11:]
+            date = date.replace('_', '-')
+            data.append({'band': property_name, 'date': date, 'value': v})
 
-download_map(test_name)
+    df = pd.DataFrame(data)
+    df['date'] = pd.to_datetime(df['date'], infer_datetime_format=True)
+    df.attrs['state_name'] = state_name
+    df['band'] = df['band'].astype("category")
 
-#image_name = '2022_04_23_NDVI'
-#pixel_value_2022_04_23_NDVI_list = []
-#
-#i=0
-#for i in range(number_of_pixels - 1):
-#    pixel_value = output.getInfo()['features'][i]['properties'][image_name]
-#    pixel_value_2022_04_23_NDVI_list.append(pixel_value)
-#
-#pixel_value_2022_04_23_NDVI_list.shape()
-#
-#
-## # Create Histogram
-#
-## In[ ]:
-#
-#
-## histogram for NDVI layer for image of 2022-04-23
-#plt.hist(pixel_value_2022_04_23_NDVI_list, bins=32)
-#
+    return df
 
+def load_all(country_code='SSD', date_range=('2010-01-01', '2018-01-01'), modis_collection='006/MOD13A1', num_pixels=1000):
+    states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
+    ee_shape = geemap.shp_to_ee(states_shp)
+    geemap.common.ee_to_csv(ee_shape, 'tmp.csv')
+    state_names = pd.read_csv('tmp.csv')['NAME_2']
+    os.remove('tmp.csv')
+    for state_name in state_names:
+        df = download_map(country_code, state_name, date_range, modis_collection, num_pixels)
+        df.to_pickle(f'../raw_data/raw_pixels/{state_name}.zip')
+        print(f"Downloaded data for {state_name}...")
 
+if __name__ == "__main__":
+    ee.Initialize()
+    load_all()
