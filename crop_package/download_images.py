@@ -40,6 +40,7 @@ def download_map(country_code,
     df = pd.DataFrame(data)
     df['date'] = pd.to_datetime(df['date'], infer_datetime_format=True)
     df.attrs['state_name'] = state_name
+    df['band'] = df['band'].astype("category")
 
     return df
 
@@ -51,7 +52,7 @@ def load_all(country_code='SSD', date_range=('2010-01-01', '2018-01-01'), modis_
     os.remove('tmp.csv')
     for state_name in state_names:
         df = download_map(country_code, state_name, date_range, modis_collection, num_pixels)
-        df.to_pickle(f'../raw_data/raw_pixels/{state_name}.zst')
+        df.to_pickle(f'../raw_data/raw_pixels/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
 
 if __name__ == "__main__":
