@@ -32,9 +32,9 @@ def download_map(county_name):
     pixel_values = sampled_pixels.getInfo()['features'][3]['properties']['2022_04_23_NDVI']
     print(pixel_values)
 
-test_name = 'Bahr al Jabal'
+# test_name = 'Bahr al Jabal'
 
-download_map(test_name)
+download_map('Bahr al Jabal')
 
 #image_name = '2022_04_23_NDVI'
 #pixel_value_2022_04_23_NDVI_list = []
@@ -55,5 +55,3 @@ download_map(test_name)
 ## histogram for NDVI layer for image of 2022-04-23
 #plt.hist(pixel_value_2022_04_23_NDVI_list, bins=32)
 #
-
-
