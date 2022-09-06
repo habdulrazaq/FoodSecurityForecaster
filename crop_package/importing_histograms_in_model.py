@@ -13,14 +13,22 @@ from sklearn.model_selection import TimeSeriesSplit
 # 1. import y
 yield_data_SSD = pd.read_csv('../raw_data/Crop yield data/COUNTY_level_annual/south_sudan_2010_2017.csv')
 y = pd.DataFrame(yield_data_SSD)['Yield']
-print(y)
+#print(y)
 
-# 2. split data using timeseries apprach
-tscv = TimeSeriesSplit(n_splits=5, max_train_size=None, test_size=0.3)
-tscv.split(y)
-
-for train_index, test_index in tscv.split(y):
-    print("TRAIN:", train_index, "TEST:", test_index)
-
-# 3. import feature/X (23 images/columns and 32 rows/bins)
+# 2. import feature/X (23 images/columns and 32 rows/bins)
 X = np.random.uniform(0, 9000, (23, 32))
+
+# 3. split y
+y = y.to_numpy()
+tscv = TimeSeriesSplit(n_splits=2, max_train_size=None, test_size=3)
+
+for (train_idx, test_idx) in tscv.split(y):
+    y_train, y_test = y[train_idx], y[test_idx]
+    print(y_train, y_test)
+
+
+
+
+
+# for train_index, test_index in tscv.split(y):
+#     print("TRAIN:", train_index, "TEST:", test_index)
