@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import collections
+from datetime import date, timedelta
+import os
+
 import ee
 from ee import ImageCollection
 import geemap
 import numpy as np
-import pickle
+import pandas as pd
 
 def download_map(country_code,
                  state_name,
@@ -22,17 +26,34 @@ def download_map(country_code,
 
     region = state_ee.geometry()
 
-    sampled_pixels = [
-        sample['properties'] for sample in image_collection.sample(region, scale=300 , numPixels=num_pixels).getInfo()['features']
-    ]
+    samples = image_collection.sample(region, scale=300 , numPixels=num_pixels)
 
-    return {k[11:] : np.array([sample[k] for sample in sampled_pixels]) for k in sampled_pixels[0]}
+    features = samples.getInfo()['features']
 
+    data = []
+    for feature_set in features:
+        for k, v in feature_set['properties'].items():
+            date, property_name = k[:10], k[11:]
+            date = date.replace('_', '-')
+            data.append({'band': property_name, 'date': date, 'value': v})
 
-def load_all(country_code='SSD', modis_collection='006/MOD13A1'):
-    ee.Initialize()
+    df = pd.DataFrame(data)
+    df['date'] = pd.to_datetime(df['date'], infer_datetime_format=True)
+    df.attrs['state_name'] = state_name
+
+    return df
+
+def load_all(country_code='SSD', date_range=('2010-01-01', '2018-01-01'), modis_collection='006/MOD13A1', num_pixels=1000):
     states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
     ee_shape = geemap.shp_to_ee(states_shp)
-    print(ee_shape)
+    geemap.common.ee_to_csv(ee_shape, 'tmp.csv')
+    state_names = pd.read_csv('tmp.csv')['NAME_2']
+    os.remove('tmp.csv')
+    for state_name in state_names:
+        df = download_map(country_code, state_name, date_range, modis_collection, num_pixels)
+        df.to_pickle(f'../raw_data/raw_pixels/{state_name}.zst')
+        print(f"Downloaded data for {state_name}...")
 
-load_all()
+if __name__ == "__main__":
+    ee.Initialize()
+    load_all()
