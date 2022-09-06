@@ -28,6 +28,7 @@ def download_map(country_code,
 
     return {k[11:] : np.array([sample[k] for sample in sampled_pixels]) for k in sampled_pixels[0]}
 
+
 def load_all(country_code='SSD', modis_collection='006/MOD13A1'):
     ee.Initialize()
     states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
@@ -35,16 +36,3 @@ def load_all(country_code='SSD', modis_collection='006/MOD13A1'):
     print(ee_shape)
 
 load_all()
-
-#test_name = 'Bahr al Jabal'
-#results = download_map('SSD', test_name, num_pixels=5000)
-#for k, v in results.items():
-#    print(k, v)
-#
-#import matplotlib.pyplot as plt
-#
-#for i, (k, v) in enumerate(results.items()):
-#    plt.subplot(6, 2, i + 1)
-#    plt.title(k)
-#    plt.hist(v, bins='auto')
-#plt.show()
