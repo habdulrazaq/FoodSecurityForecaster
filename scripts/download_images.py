@@ -7,17 +7,18 @@ import geemap
 import numpy as np
 import pickle
 
-def download_map(country_code, state_name, modis_collection='006/MOD13A1', num_pixels=5000):
-    ee.Initialize()
+def download_map(country_code,
+                 state_name,
+                 date_range=('2021-01-01','2022-12-30'),
+                 modis_collection='006/MOD13A1',
+                 num_pixels=5000):
     Map = geemap.Map()
-    counties_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
-    ee_shape = geemap.shp_to_ee(counties_shp)
+    states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
+    ee_shape = geemap.shp_to_ee(states_shp)
     state_ee = ee_shape.filter(ee.Filter.eq("NAME_2", state_name))
     Map.addLayer(state_ee.geometry())
 
-    start_date = '2021-01-01'
-    end_date = '2022-12-30'
-    image_collection = ee.ImageCollection(f'MODIS/{modis_collection}').filter(ee.Filter.date(start_date,end_date)).toBands()
+    image_collection = ee.ImageCollection(f'MODIS/{modis_collection}').filter(ee.Filter.date(*date_range)).toBands()
 
     region = state_ee.geometry()
 
@@ -28,23 +29,10 @@ def download_map(country_code, state_name, modis_collection='006/MOD13A1', num_p
     return {k[11:] : np.array([sample[k] for sample in sampled_pixels]) for k in sampled_pixels[0]}
 
 
+def load_all(country_code='SSD', modis_collection='006/MOD13A1'):
+    ee.Initialize()
+    states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
+    ee_shape = geemap.shp_to_ee(states_shp)
+    print(ee_shape)
 
-#image_name = '2022_04_23_NDVI'
-#pixel_value_2022_04_23_NDVI_list = []
-#
-#i=0
-#for i in range(number_of_pixels - 1):
-#    pixel_value = output.getInfo()['features'][i]['properties'][image_name]
-#    pixel_value_2022_04_23_NDVI_list.append(pixel_value)
-#
-#pixel_value_2022_04_23_NDVI_list.shape()
-#
-#
-## # Create Histogram
-#
-## In[ ]:
-#
-#
-## histogram for NDVI layer for image of 2022-04-23
-#plt.hist(pixel_value_2022_04_23_NDVI_list, bins=32)
-#
+load_all()
