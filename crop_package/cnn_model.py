@@ -1,8 +1,8 @@
 from tensorflow.keras import layers, models, losses
 
+
 def cnn():
 
-    #Model instantiation
     model = models.Sequential([
         layers.Normalization(),
         layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
