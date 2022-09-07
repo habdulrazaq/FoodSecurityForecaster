@@ -2,22 +2,7 @@ from webbrowser import get
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import TimeSeriesSplit
-
-#################################################
-# DELETE X.shape() = 23, 30, 1) #bins=30 #DNVI layer
-X_2010 = np.random.uniform(0, 9000, (23, 30))
-X_2011 = np.random.uniform(0, 9000, (23, 30))
-X_2012 = np.random.uniform(0, 9000, (23, 30))
-X_2013 = np.random.uniform(0, 9000, (23, 30))
-X_2014 = np.random.uniform(0, 9000, (23, 30))
-X_2015 = np.random.uniform(0, 9000, (23, 30))
-X_2016 = np.random.uniform(0, 9000, (23, 30))
-X_2017 = np.random.uniform(0, 9000, (23, 30))
-df_X_test = np.vstack((X_2010, X_2011, X_2012, X_2013, X_2014, X_2015, X_2016, X_2017))
-df_X_test = pd.DataFrame(df_X_test)
-df_X_test['Year'] = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
-print(df_X_test)
-##################################################
+from histograms import hi
 
 def get_X_y(country_code='SSD', county='Juba'):
 

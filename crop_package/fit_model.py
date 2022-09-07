@@ -1,4 +1,4 @@
-from cnn_model import cnn
+from models.cnn_model import cnn
 from tensorflow.keras import models
 from tensorflow.keras.callbacks import EarlyStopping
 from get_X_y import X_train, X_test, y_train, y_test
@@ -19,5 +19,3 @@ def fit_model(model=cnn):
                         verbose = 1)
 
     return history
-
-
