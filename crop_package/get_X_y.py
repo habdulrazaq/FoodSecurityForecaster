@@ -3,28 +3,28 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import TimeSeriesSplit
 
-#################################################
-# DELETE X.shape() = 23, 30, 1) #bins=30 #DNVI layer
-X_2010 = np.random.uniform(0, 9000, (23, 30))
-X_2011 = np.random.uniform(0, 9000, (23, 30))
-X_2012 = np.random.uniform(0, 9000, (23, 30))
-X_2013 = np.random.uniform(0, 9000, (23, 30))
-X_2014 = np.random.uniform(0, 9000, (23, 30))
-X_2015 = np.random.uniform(0, 9000, (23, 30))
-X_2016 = np.random.uniform(0, 9000, (23, 30))
-X_2017 = np.random.uniform(0, 9000, (23, 30))
-df_X_test = np.vstack((X_2010, X_2011, X_2012, X_2013, X_2014, X_2015, X_2016, X_2017))
-df_X_test = pd.DataFrame(df_X_test)
-df_X_test['Year'] = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
-print(df_X_test)
-##################################################
 
 def get_X_y(country_code='SSD', county='Juba'):
 
     # 0. import df
-    df_X = df_X_test
+    X_data = np.load(f'../data/{country_code}_data.npz')
+    X = X_data['X']
+
+    y = np.zeros(X.shape[:2])
     df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/{country_code}.csv')
-    df_combined = df_y.merge(df_X, on='Year')
+    print([name for name in X_data['county_names'] if name in df_y['County'].str.strip()])
+    exit(0)
+    df_y = df_y.sort_values('County').sort_values('Year', kind='stable')
+    print(list(df_y['County'].drop_duplicates()))
+    for i, (year, year_group) in enumerate(df_y.groupby('Year')):
+        print(year_group['County'].nunique())
+        #y[i] = year_group['Yield']
+    exit(0)
+    import matplotlib.pyplot as plt
+    plt.imshow(y)
+    plt.show()
+    exit(0)
+    df_combined = df_y.merge(X, on='Year')
 
     # 1. cross-validate
     tscv = TimeSeriesSplit(n_splits=2, max_train_size=None, test_size=2)
@@ -41,3 +41,5 @@ def get_X_y(country_code='SSD', county='Juba'):
     y_test = y_test.to_numpy()
 
     return X_train, X_test, y_train, y_test
+
+get_X_y('SSD', 'Juba')
