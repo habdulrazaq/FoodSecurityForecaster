@@ -1,0 +1,46 @@
+﻿"GID_2,C,10","GID_0,C,10","COUNTRY,C,11","GID_1,C,10","NAME_1,C,20","NL_NAME_1,C,10","NAME_2,C,13","VARNAME_2,C,10","NL_NAME_2,C,10","TYPE_2,C,10","ENGTYPE_2,C,10","CC_2,C,10","HASC_2,C,10"
+SSD.1.1_1,SSD,South Sudan,SSD.1_1,Central Equatoria,NA,Bahr al Jabal,NA,NA,District,District,NA,NA
+SSD.1.2_1,SSD,South Sudan,SSD.1_1,Central Equatoria,NA,Kajo Kaii,NA,NA,District,District,NA,NA
+SSD.1.3_1,SSD,South Sudan,SSD.1_1,Central Equatoria,NA,Nahr Yei,NA,NA,District,District,NA,NA
+SSD.1.4_1,SSD,South Sudan,SSD.1_1,Central Equatoria,NA,Terkaka,NA,NA,District,District,NA,NA
+SSD.2.1_1,SSD,South Sudan,SSD.2_1,Eastern Equatoria,NA,Amatonge,NA,NA,District,District,NA,NA
+SSD.2.2_1,SSD,South Sudan,SSD.2_1,Eastern Equatoria,NA,Kapoeta,NA,NA,District,District,NA,NA
+SSD.2.3_1,SSD,South Sudan,SSD.2_1,Eastern Equatoria,NA,Magwi,NA,NA,District,District,NA,NA
+SSD.2.4_1,SSD,South Sudan,SSD.2_1,Eastern Equatoria,NA,Shokodom,NA,NA,District,District,NA,NA
+SSD.3.1_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Akobo,NA,NA,District,District,NA,NA
+SSD.3.2_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Ayod,NA,NA,District,District,NA,NA
+SSD.3.3_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Bor,NA,NA,District,District,NA,NA
+SSD.3.4_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Fam al Zaraf,NA,NA,District,District,NA,NA
+SSD.3.5_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Nahr Atiem,NA,NA,District,District,NA,NA
+SSD.3.6_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Pibor,NA,NA,District,District,NA,NA
+SSD.3.7_1,SSD,South Sudan,SSD.3_1,Jungoli,NA,Wat,NA,NA,District,District,NA,NA
+SSD.4.1_1,SSD,South Sudan,SSD.4_1,Lakes,NA,Aliab,NA,NA,District,District,NA,NA
+SSD.4.2_1,SSD,South Sudan,SSD.4_1,Lakes,NA,Rumbek,NA,NA,District,District,NA,NA
+SSD.4.3_1,SSD,South Sudan,SSD.4_1,Lakes,NA,Shobet,NA,NA,District,District,NA,NA
+SSD.4.4_1,SSD,South Sudan,SSD.4_1,Lakes,NA,Yerol,NA,NA,District,District,NA,NA
+SSD.5.1_1,SSD,South Sudan,SSD.5_1,North Bahr-al-Ghazal,NA,Aryat,NA,NA,District,District,NA,NA
+SSD.5.2_1,SSD,South Sudan,SSD.5_1,North Bahr-al-Ghazal,NA,Aweil,NA,NA,District,District,NA,NA
+SSD.5.3_1,SSD,South Sudan,SSD.5_1,North Bahr-al-Ghazal,NA,Nahr Lol,NA,NA,District,District,NA,NA
+SSD.5.4_1,SSD,South Sudan,SSD.5_1,North Bahr-al-Ghazal,NA,Wanjuk,NA,NA,District,District,NA,NA
+SSD.6.1_1,SSD,South Sudan,SSD.6_1,Unity,NA,Al Leiri,NA,NA,District,District,NA,NA
+SSD.6.2_1,SSD,South Sudan,SSD.6_1,Unity,NA,Al Mayom,NA,NA,District,District,NA,NA
+SSD.6.3_1,SSD,South Sudan,SSD.6_1,Unity,NA,Faring,NA,NA,District,District,NA,NA
+SSD.6.4_1,SSD,South Sudan,SSD.6_1,Unity,NA,Rabkona,NA,NA,District,District,NA,NA
+SSD.7.1_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Al Mabien,NA,NA,District,District,NA,NA
+SSD.7.2_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Al Renk,NA,NA,District,District,NA,NA
+SSD.7.3_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Baleit,NA,NA,District,District,NA,NA
+SSD.7.4_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Fashooda,NA,NA,District,District,NA,NA
+SSD.7.5_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Malut,NA,NA,District,District,NA,NA
+SSD.7.6_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Mayot,NA,NA,District,District,NA,NA
+SSD.7.7_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Sobat,NA,NA,District,District,NA,NA
+SSD.7.8_1,SSD,South Sudan,SSD.7_1,Upper Nile,NA,Tonga,NA,NA,District,District,NA,NA
+SSD.8.1_1,SSD,South Sudan,SSD.8_1,Warap,NA,Gogrial,NA,NA,District,District,NA,NA
+SSD.8.2_1,SSD,South Sudan,SSD.8_1,Warap,NA,Malek,NA,NA,District,District,NA,NA
+SSD.8.3_1,SSD,South Sudan,SSD.8_1,Warap,NA,Tonj,NA,NA,District,District,NA,NA
+SSD.8.4_1,SSD,South Sudan,SSD.8_1,Warap,NA,Warab,NA,NA,District,District,NA,NA
+SSD.9.1_1,SSD,South Sudan,SSD.9_1,West Bahr-al-Ghazal,NA,Raja,NA,NA,District,District,NA,NA
+SSD.9.2_1,SSD,South Sudan,SSD.9_1,West Bahr-al-Ghazal,NA,Wau,NA,NA,District,District,NA,NA
+SSD.10.1_1,SSD,South Sudan,SSD.10_1,West Equatoria,NA,Meridi,NA,NA,District,District,NA,NA
+SSD.10.2_1,SSD,South Sudan,SSD.10_1,West Equatoria,NA,Mundri,NA,NA,District,District,NA,NA
+SSD.10.3_1,SSD,South Sudan,SSD.10_1,West Equatoria,NA,Tombura,NA,NA,District,District,NA,NA
+SSD.10.4_1,SSD,South Sudan,SSD.10_1,West Equatoria,NA,Yambio,NA,NA,District,District,NA,NA
