@@ -17,5 +17,7 @@ def fit_model(model=cnn):
                         epochs = 50,
                         callbacks = [es],
                         verbose = 1)
-    
+
     return history
+
+
