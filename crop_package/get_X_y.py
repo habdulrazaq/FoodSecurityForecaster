@@ -41,5 +41,3 @@ def get_X_y(country_code='SSD', county='Juba'):
     y_test = y_test.to_numpy()
 
     return X_train, X_test, y_train, y_test
-
- 
