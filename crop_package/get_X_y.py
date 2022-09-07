@@ -2,14 +2,29 @@ from webbrowser import get
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import TimeSeriesSplit
-from histograms import hi
+
 
 def get_X_y(country_code='SSD', county='Juba'):
 
     # 0. import df
-    df_X = df_X_test
+    X_data = np.load(f'../data/{country_code}_data.npz')
+    X = X_data['X']
+
+    y = np.zeros(X.shape[:2])
     df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/{country_code}.csv')
-    df_combined = df_y.merge(df_X, on='Year')
+    print([name for name in X_data['county_names'] if name in df_y['County'].str.strip()])
+    exit(0)
+    df_y = df_y.sort_values('County').sort_values('Year', kind='stable')
+    print(list(df_y['County'].drop_duplicates()))
+    for i, (year, year_group) in enumerate(df_y.groupby('Year')):
+        print(year_group['County'].nunique())
+        #y[i] = year_group['Yield']
+    exit(0)
+    import matplotlib.pyplot as plt
+    plt.imshow(y)
+    plt.show()
+    exit(0)
+    df_combined = df_y.merge(X, on='Year')
 
     # 1. cross-validate
     tscv = TimeSeriesSplit(n_splits=2, max_train_size=None, test_size=2)
@@ -26,3 +41,5 @@ def get_X_y(country_code='SSD', county='Juba'):
     y_test = y_test.to_numpy()
 
     return X_train, X_test, y_train, y_test
+
+get_X_y('SSD', 'Juba')
