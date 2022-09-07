@@ -4,6 +4,8 @@
 import collections
 from datetime import date, timedelta
 import os
+from socket import timeout
+import sys
 
 import ee
 from ee import ImageCollection
@@ -15,7 +17,7 @@ def download_map(country_code,
                  state_name,
                  date_range=('2021-01-01','2022-12-30'),
                  modis_collection='006/MOD13A1',
-                 num_pixels=5000):
+                 num_pixels=1000):
     Map = geemap.Map()
     states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
     ee_shape = geemap.shp_to_ee(states_shp)
@@ -47,14 +49,15 @@ def download_map(country_code,
 def load_all(country_code='SSD', date_range=('2010-01-01', '2018-01-01'), modis_collection='006/MOD13A1', num_pixels=1000):
     states_shp = f'../raw_data/gadm41_{country_code}_shp/gadm41_{country_code}_2.shp'
     ee_shape = geemap.shp_to_ee(states_shp)
-    geemap.common.ee_to_csv(ee_shape, 'tmp.csv')
+    geemap.common.ee_to_csv(ee_shape, "tmp.csv", timeout=1000)
     state_names = pd.read_csv('tmp.csv')['NAME_2']
     os.remove('tmp.csv')
     for state_name in state_names:
+        print(f'working on:{state_name}')
         df = download_map(country_code, state_name, date_range, modis_collection, num_pixels)
         df.to_pickle(f'../raw_data/raw_pixels/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
 
 if __name__ == "__main__":
     ee.Initialize()
-    load_all()
+    load_all(sys.argv[1])

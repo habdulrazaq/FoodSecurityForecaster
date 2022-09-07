@@ -20,10 +20,15 @@ def get_X_y(country_code='SSD', county='Juba'):
         print(year_group['County'].nunique())
         #y[i] = year_group['Yield']
     exit(0)
+    
     import matplotlib.pyplot as plt
     plt.imshow(y)
     plt.show()
     exit(0)
+
+
+
+
     df_combined = df_y.merge(X, on='Year')
 
     # 1. cross-validate
@@ -41,5 +46,3 @@ def get_X_y(country_code='SSD', county='Juba'):
     y_test = y_test.to_numpy()
 
     return X_train, X_test, y_train, y_test
-
-
