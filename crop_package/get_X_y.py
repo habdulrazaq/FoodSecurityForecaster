@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def get_X_y(country_code='SSD', test_years=None):
+def get_X_y(country_code='SSD'):
 
     # 0. import df
     X_data = np.load(f'../data/{country_code}_data.npz')
@@ -25,10 +25,7 @@ def get_X_y(country_code='SSD', test_years=None):
     for i, (year, group) in enumerate(year_groups):
         y[i] = group['Yield']
 
-    if test_years is None:
-        return X, y
+    return X, y
 
-    X_train, X_test = X[:-test_years], X[-test_years:]
-    y_train, y_test = y[:-test_years], y[-test_years:]
-
-    return X_train, X_test, y_train, y_test
+def split_years(*arrays, test_size=1):
+    return sum(((array[:-test_size], array[-test_size:]) for array in arrays), ())
