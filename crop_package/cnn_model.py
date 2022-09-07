@@ -1,6 +1,6 @@
 from tensorflow.keras import layers, models, losses
 
-def build_cnn():
+def cnn():
 
     #Model instantiation
     model = models.Sequential([
@@ -19,5 +19,3 @@ def build_cnn():
     model.compile(loss=losses.mse, optimizer='adam')
 
     return model
-
- 
