@@ -1,8 +1,8 @@
 from tensorflow.keras import layers, models, losses
 
-def build_cnn():
 
-    #Model instantiation
+def cnn():
+
     model = models.Sequential([
         layers.Normalization(),
         layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
@@ -19,5 +19,3 @@ def build_cnn():
     model.compile(loss=losses.mse, optimizer='adam')
 
     return model
-
- 
