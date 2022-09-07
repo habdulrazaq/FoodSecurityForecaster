@@ -2,7 +2,7 @@
 .coverage
 .ipynb_checkpoints
 .DS_Store
-*.csv
+.csv
 **/__pycache__/
 .env
 .python-version

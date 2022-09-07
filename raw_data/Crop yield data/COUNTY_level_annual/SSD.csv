@@ -1,0 +1,633 @@
+State,County,Year,Crop,Area planted,Production,Yield,Region1,Region2
+Central Equatoria ,Juba ,2010,corn,"37,373","32,888",0.879993899,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2010,corn,"55,723","66,868",1.200006819,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2010,corn,"21,508","25,810",1.200017668,central equatoria,lainya
+Central Equatoria ,Morobo ,2010,corn,"25,099","32,126",1.279970198,central equatoria,morobo
+Central Equatoria ,Terekeka ,2010,corn,"18,409","16,200",0.880004998,central equatoria,terekeka
+Central Equatoria ,Yei ,2010,corn,"40,814","48,977",1.20000441,central equatoria,yei
+Central Equatoria ,Juba ,2011,corn,"23,097","14,782",0.639998095,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2011,corn,"47,082","52,732",1.120003143,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2011,corn,"24,369","25,343",1.039968649,central equatoria,lainya
+Central Equatoria ,Morobo ,2011,corn,"37,603","51,140",1.359996915,central equatoria,morobo
+Central Equatoria ,Terekeka ,2011,corn,"18,961","10,618",0.559993882,central equatoria,terekeka
+Central Equatoria ,Yei ,2011,corn,"46,242","62,889",1.359996626,central equatoria,yei
+Central Equatoria ,Juba ,2012,corn,"21,051","18,524",0.879958767,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2012,corn,"38,765","46,518",1.199999484,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2012,corn,"9,295","9,667",1.040021086,central equatoria,lainya
+Central Equatoria ,Morobo ,2012,corn,"9,783","12,522",1.279972606,central equatoria,morobo
+Central Equatoria ,Terekeka ,2012,corn,"18,224","13,122",0.720041045,central equatoria,terekeka
+Central Equatoria ,Yei ,2012,corn,"15,531","19,879",1.279954414,central equatoria,yei
+Central Equatoria ,Juba ,2013,corn,"14,950","14,352",0.960000268,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2013,corn,"10,034","12,041",1.200017939,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2013,corn,"4,637","4,822",1.039895624,central equatoria,lainya
+Central Equatoria ,Morobo ,2013,corn,"5,921","7,578",1.27984665,central equatoria,morobo
+Central Equatoria ,Terekeka ,2013,corn,"15,771","12,617",0.80001395,central equatoria,terekeka
+Central Equatoria ,Yei ,2013,corn,"8,550","10,943",1.279879767,central equatoria,yei
+Central Equatoria ,Juba ,2014,corn,"37,373","32,888",0.879993899,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2014,corn,"55,723","66,868",1.200006819,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2014,corn,"21,508","25,810",1.200017668,central equatoria,lainya
+Central Equatoria ,Morobo ,2014,corn,"25,099","32,126",1.279970198,central equatoria,morobo
+Central Equatoria ,Terekeka ,2014,corn,"18,409","16,200",0.880004998,central equatoria,terekeka
+Central Equatoria ,Yei ,2014,corn,"40,814","48,977",1.20000441,central equatoria,yei
+Central Equatoria ,Juba ,2015,corn,"23,097","14,782",0.639998095,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2015,corn,"47,082","52,732",1.120003143,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2015,corn,"24,369","25,343",1.039968649,central equatoria,lainya
+Central Equatoria ,Morobo ,2015,corn,"37,603","51,140",1.359996915,central equatoria,morobo
+Central Equatoria ,Terekeka ,2015,corn,"18,961","10,618",0.559993882,central equatoria,terekeka
+Central Equatoria ,Yei ,2015,corn,"46,242","62,889",1.359996626,central equatoria,yei
+Central Equatoria ,Juba ,2016,corn,"21,051","18,524",0.879958767,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2016,corn,"38,765","46,518",1.199999484,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2016,corn,"9,295","9,667",1.040021086,central equatoria,lainya
+Central Equatoria ,Morobo ,2016,corn,"9,783","12,522",1.279972606,central equatoria,morobo
+Central Equatoria ,Terekeka ,2016,corn,"18,224","13,122",0.720041045,central equatoria,terekeka
+Central Equatoria ,Yei ,2016,corn,"15,531","19,879",1.279954414,central equatoria,yei
+Central Equatoria ,Juba ,2017,corn,"14,950","14,352",0.960000268,central equatoria,juba
+Central Equatoria ,Kajo Keji ,2017,corn,"10,034","12,041",1.200017939,central equatoria,kajo keji
+Central Equatoria ,Lainya ,2017,corn,"4,637","4,822",1.039895624,central equatoria,lainya
+Central Equatoria ,Morobo ,2017,corn,"5,921","7,578",1.27984665,central equatoria,morobo
+Central Equatoria ,Terekeka ,2017,corn,"15,771","12,617",0.80001395,central equatoria,terekeka
+Central Equatoria ,Yei ,2017,corn,"8,550","10,943",1.279879767,central equatoria,yei
+Eastern Equatoria ,Budi ,2010,corn,"22,066","21,184",0.960029185,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2010,corn,"23,295","22,363",0.959991586,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2010,corn,"17,431","11,156",0.640011244,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2010,corn,"9,630","6,163",0.63998297,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2010,corn,"7,419","4,748",0.639983286,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2010,corn,"14,717","11,774",0.800028538,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2010,corn,"38,119","45,742",1.199978488,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2010,corn,"18,285","19,016",1.039977906,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2011,corn,"20,524","16,419",0.79999123,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2011,corn,"23,993","21,114",0.880007169,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2011,corn,"11,670","5,602",0.480038731,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2011,corn,"8,927","4,999",0.559991487,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2011,corn,"6,419","3,081",0.479989407,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2011,corn,"15,159","10,914",0.719970183,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2011,corn,"33,653","40,384",1.200011292,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2011,corn,"18,833","15,067",0.800032921,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2012,corn,"19,072","15,258",0.800022022,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2012,corn,"22,651","19,933",0.880005828,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2012,corn,"12,033","8,664",0.720022272,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2012,corn,"7,300","5,840",0.80000274,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2012,corn,"5,128","2,462",0.480119342,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2012,corn,"16,822","14,804",0.880038759,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2012,corn,"15,846","17,748",1.120029534,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2012,corn,"17,280","13,824",0.800001157,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2013,corn,"15,660","13,781",0.880013538,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2013,corn,"20,602","19,778",0.960004077,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2013,corn,"10,764","6,028",0.560018952,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2013,corn,"6,540","4,186",0.640066666,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2013,corn,"3,842","1,844",0.47997189,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2013,corn,"12,334","10,854",0.880007459,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2013,corn,"20,844","25,013",1.200008636,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2013,corn,"16,820","12,110",0.719977884,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2014,corn,"22,066","21,184",0.960029185,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2014,corn,"23,295","22,363",0.959991586,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2014,corn,"17,431","11,156",0.640011244,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2014,corn,"9,630","6,163",0.63998297,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2014,corn,"7,419","4,748",0.639983286,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2014,corn,"14,717","11,774",0.800028538,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2014,corn,"38,119","45,742",1.199978488,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2014,corn,"18,285","19,016",1.039977906,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2015,corn,"20,524","16,419",0.79999123,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2015,corn,"23,993","21,114",0.880007169,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2015,corn,"11,670","5,602",0.480038731,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2015,corn,"8,927","4,999",0.559991487,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2015,corn,"6,419","3,081",0.479989407,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2015,corn,"15,159","10,914",0.719970183,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2015,corn,"33,653","40,384",1.200011292,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2015,corn,"18,833","15,067",0.800032921,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2016,corn,"19,072","15,258",0.800022022,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2016,corn,"22,651","19,933",0.880005828,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2016,corn,"12,033","8,664",0.720022272,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2016,corn,"7,300","5,840",0.80000274,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2016,corn,"5,128","2,462",0.480119342,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2016,corn,"16,822","14,804",0.880038759,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2016,corn,"15,846","17,748",1.120029534,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2016,corn,"17,280","13,824",0.800001157,eastern equatoria,torit
+Eastern Equatoria ,Budi ,2017,corn,"15,660","13,781",0.880013538,eastern equatoria,budi
+Eastern Equatoria ,Ikotos ,2017,corn,"20,602","19,778",0.960004077,eastern equatoria,ikotos
+Eastern Equatoria ,Kapoeta East ,2017,corn,"10,764","6,028",0.560018952,eastern equatoria,kapoeta east
+Eastern Equatoria ,Kapoeta North ,2017,corn,"6,540","4,186",0.640066666,eastern equatoria,kapoeta north
+Eastern Equatoria ,Kapoeta South ,2017,corn,"3,842","1,844",0.47997189,eastern equatoria,kapoeta south
+Eastern Equatoria ,Lafon ,2017,corn,"12,334","10,854",0.880007459,eastern equatoria,lafon
+Eastern Equatoria ,Magwi ,2017,corn,"20,844","25,013",1.200008636,eastern equatoria,magwi
+Eastern Equatoria ,Torit ,2017,corn,"16,820","12,110",0.719977884,eastern equatoria,torit
+Jonglei ,Akobo ,2010,corn,"3,949","2,212",0.560152946,jonglei,akobo
+Jonglei ,Ayod ,2010,corn,938,525,0.559701539,jonglei,ayod
+Jonglei ,Bor South ,2010,corn,"2,208","1,589",0.719668493,jonglei,bor south
+Jonglei ,Canal/Pigi ,2010,corn,"2,157","1,208",0.560057485,jonglei,canalpigi
+Jonglei ,Duk ,2010,corn,0,0,1,jonglei,duk
+Jonglei ,Fangak ,2010,corn,"2,586","1,448",0.559955145,jonglei,fangak
+Jonglei ,Nyirol ,2010,corn,"3,795","2,429",0.640062185,jonglei,nyirol
+Jonglei ,Pibor ,2010,corn,"6,050","6,292",1.039999339,jonglei,pibor
+Jonglei ,Pochalla ,2010,corn,"5,007","5,207",1.039943281,jonglei,pochalla
+Jonglei ,Twic East ,2010,corn,"1,389",667,480.1670866,jonglei,twic east
+Jonglei ,Uror ,2010,corn,"3,188","1,530",0.479941031,jonglei,uror
+Jonglei ,Akobo ,2011,corn,"6,834","5,467",0.799973661,jonglei,akobo
+Jonglei ,Ayod ,2011,corn,966,541,0.560041453,jonglei,ayod
+Jonglei ,Bor South ,2011,corn,"4,263","2,729",0.640167953,jonglei,bor south
+Jonglei ,Canal/Pigi ,2011,corn,"2,222","1,120",0.504072724,jonglei,canalpigi
+Jonglei ,Duk ,2011,corn,0,0,1,jonglei,duk
+Jonglei ,Fangak ,2011,corn,0,0,1,jonglei,fangak
+Jonglei ,Nyirol ,2011,corn,"3,909","2,502",0.640070604,jonglei,nyirol
+Jonglei ,Pibor ,2011,corn,"8,226","7,239",0.880016046,jonglei,pibor
+Jonglei ,Pochalla ,2011,corn,"5,894","4,715",0.799969461,jonglei,pochalla
+Jonglei ,Twic East ,2011,corn,"6,523","2,609",0.399978538,jonglei,twic east
+Jonglei ,Uror ,2011,corn,"7,662","4,904",0.640046462,jonglei,uror
+Jonglei ,Akobo ,2012,corn,"5,247","4,198",0.800080044,jonglei,akobo
+Jonglei ,Ayod ,2012,corn,"1,029",576,559.7124672,jonglei,ayod
+Jonglei ,Bor South ,2012,corn,"6,534","4,182",0.64004224,jonglei,bor south
+Jonglei ,Canal/Pigi ,2012,corn,"1,506",759,503.9506673,jonglei,canalpigi
+Jonglei ,Duk ,2012,corn,"2,444","1,369",0.560165296,jonglei,duk
+Jonglei ,Fangak ,2012,corn,"1,321",740,560.1393536,jonglei,fangak
+Jonglei ,Nyirol ,2012,corn,"3,688","2,360",0.639922996,jonglei,nyirol
+Jonglei ,Pibor ,2012,corn,"7,849","5,652",0.720095298,jonglei,pibor
+Jonglei ,Pochalla ,2012,corn,"6,625","5,300",0.800003019,jonglei,pochalla
+Jonglei ,Twic East ,2012,corn,"6,835","3,828",0.560064959,jonglei,twic east
+Jonglei ,Uror ,2012,corn,"10,548","5,485",0.520008343,jonglei,uror
+Jonglei ,Akobo ,2013,corn,"5,615","4,492",0.800003562,jonglei,akobo
+Jonglei ,Ayod ,2013,corn,"1,008",565,560.460371,jonglei,ayod
+Jonglei ,Bor South ,2013,corn,"8,567","5,825",0.679938369,jonglei,bor south
+Jonglei ,Canal/Pigi ,2013,corn,"1,214",612,504.0771765,jonglei,canalpigi
+Jonglei ,Duk ,2013,corn,"2,212","1,239",0.560146467,jonglei,duk
+Jonglei ,Fangak ,2013,corn,"2,336","1,308",0.559950345,jonglei,fangak
+Jonglei ,Nyirol ,2013,corn,"4,168","2,667",0.63988388,jonglei,nyirol
+Jonglei ,Pibor ,2013,corn,"7,964","6,371",0.799977399,jonglei,pibor
+Jonglei ,Pochalla ,2013,corn,"5,994","5,275",0.880048715,jonglei,pochalla
+Jonglei ,Twic East ,2013,corn,"6,287","3,521",0.560051534,jonglei,twic east
+Jonglei ,Uror ,2013,corn,"9,034","4,698",0.520040735,jonglei,uror
+Jonglei ,Akobo ,2014,corn,"3,949","2,212",0.560152946,jonglei,akobo
+Jonglei ,Ayod ,2014,corn,938,525,0.559701539,jonglei,ayod
+Jonglei ,Bor South ,2014,corn,"2,208","1,589",0.719668493,jonglei,bor south
+Jonglei ,Canal/Pigi ,2014,corn,"2,157","1,208",0.560057485,jonglei,canalpigi
+Jonglei ,Duk ,2014,corn,0,0,1,jonglei,duk
+Jonglei ,Fangak ,2014,corn,"2,586","1,448",0.559955145,jonglei,fangak
+Jonglei ,Nyirol ,2014,corn,"3,795","2,429",0.640062185,jonglei,nyirol
+Jonglei ,Pibor ,2014,corn,"6,050","6,292",1.039999339,jonglei,pibor
+Jonglei ,Pochalla ,2014,corn,"5,007","5,207",1.039943281,jonglei,pochalla
+Jonglei ,Twic East ,2014,corn,"1,389",667,480.1670866,jonglei,twic east
+Jonglei ,Uror ,2014,corn,"3,188","1,530",0.479941031,jonglei,uror
+Jonglei ,Akobo ,2015,corn,"6,834","5,467",0.799973661,jonglei,akobo
+Jonglei ,Ayod ,2015,corn,966,541,0.560041453,jonglei,ayod
+Jonglei ,Bor South ,2015,corn,"4,263","2,729",0.640167953,jonglei,bor south
+Jonglei ,Canal/Pigi ,2015,corn,"2,222","1,120",0.504072724,jonglei,canalpigi
+Jonglei ,Duk ,2015,corn,0,0,1,jonglei,duk
+Jonglei ,Fangak ,2015,corn,0,0,1,jonglei,fangak
+Jonglei ,Nyirol ,2015,corn,"3,909","2,502",0.640070604,jonglei,nyirol
+Jonglei ,Pibor ,2015,corn,"8,226","7,239",0.880016046,jonglei,pibor
+Jonglei ,Pochalla ,2015,corn,"5,894","4,715",0.799969461,jonglei,pochalla
+Jonglei ,Twic East ,2015,corn,"6,523","2,609",0.399978538,jonglei,twic east
+Jonglei ,Uror ,2015,corn,"7,662","4,904",0.640046462,jonglei,uror
+Jonglei ,Akobo ,2016,corn,"5,247","4,198",0.800080044,jonglei,akobo
+Jonglei ,Ayod ,2016,corn,"1,029",576,559.7124672,jonglei,ayod
+Jonglei ,Bor South ,2016,corn,"6,534","4,182",0.64004224,jonglei,bor south
+Jonglei ,Canal/Pigi ,2016,corn,"1,506",759,503.9506673,jonglei,canalpigi
+Jonglei ,Duk ,2016,corn,"2,444","1,369",0.560165296,jonglei,duk
+Jonglei ,Fangak ,2016,corn,"1,321",740,560.1393536,jonglei,fangak
+Jonglei ,Nyirol ,2016,corn,"3,688","2,360",0.639922996,jonglei,nyirol
+Jonglei ,Pibor ,2016,corn,"7,849","5,652",0.720095298,jonglei,pibor
+Jonglei ,Pochalla ,2016,corn,"6,625","5,300",0.800003019,jonglei,pochalla
+Jonglei ,Twic East ,2016,corn,"6,835","3,828",0.560064959,jonglei,twic east
+Jonglei ,Uror ,2016,corn,"10,548","5,485",0.520008343,jonglei,uror
+Jonglei ,Akobo ,2017,corn,"5,615","4,492",0.800003562,jonglei,akobo
+Jonglei ,Ayod ,2017,corn,"1,008",565,560.460371,jonglei,ayod
+Jonglei ,Bor South ,2017,corn,"8,567","5,825",0.679938369,jonglei,bor south
+Jonglei ,Canal/Pigi ,2017,corn,"1,214",612,504.0771765,jonglei,canalpigi
+Jonglei ,Duk ,2017,corn,"2,212","1,239",0.560146467,jonglei,duk
+Jonglei ,Fangak ,2017,corn,"2,336","1,308",0.559950345,jonglei,fangak
+Jonglei ,Nyirol ,2017,corn,"4,168","2,667",0.63988388,jonglei,nyirol
+Jonglei ,Pibor ,2017,corn,"7,964","6,371",0.799977399,jonglei,pibor
+Jonglei ,Pochalla ,2017,corn,"5,994","5,275",0.880048715,jonglei,pochalla
+Jonglei ,Twic East ,2017,corn,"6,287","3,521",0.560051534,jonglei,twic east
+Jonglei ,Uror ,2017,corn,"9,034","4,698",0.520040735,jonglei,uror
+Lakes,Awerial ,2010,corn,"5,846","4,209",0.719984263,lakes,awerial
+Lakes,Cueibet ,2010,corn,"17,883","17,168",0.960018118,lakes,cueibet
+Lakes,Rumbek Centre ,2010,corn,"14,925","16,716",1.119999196,lakes,rumbek centre
+Lakes,Rumbek East ,2010,corn,"14,008","15,689",1.120001999,lakes,rumbek east
+Lakes,Rumbek North ,2010,corn,"4,002","4,482",1.119937033,lakes,rumbek north
+Lakes,Wulu ,2010,corn,"8,230","7,901",0.960024787,lakes,wulu
+Lakes,Yirol East ,2010,corn,"10,567","8,454",0.800039746,lakes,yirol east
+Lakes,Yirol West ,2010,corn,"18,016","17,296",0.960035746,lakes,yirol west
+Lakes,Awerial ,2011,corn,"10,323","8,258",0.799963189,lakes,awerial
+Lakes,Cueibet ,2011,corn,"23,025","22,104",0.960000174,lakes,cueibet
+Lakes,Rumbek Centre ,2011,corn,"10,387","9,971",0.959950323,lakes,rumbek centre
+Lakes,Rumbek East ,2011,corn,"14,997","14,397",0.959992265,lakes,rumbek east
+Lakes,Rumbek North ,2011,corn,"2,748","2,198",0.799861723,lakes,rumbek north
+Lakes,Wulu ,2011,corn,"10,173","9,766",0.959992529,lakes,wulu
+Lakes,Yirol East ,2011,corn,"10,884","10,449",0.960033443,lakes,yirol east
+Lakes,Yirol West ,2011,corn,"14,710","14,121",0.959959484,lakes,yirol west
+Lakes,Awerial ,2012,corn,"7,291","5,833",0.800030174,lakes,awerial
+Lakes,Cueibet ,2012,corn,"25,521","24,500",0.959993887,lakes,cueibet
+Lakes,Rumbek Centre ,2012,corn,"14,409","12,680",0.880006385,lakes,rumbek centre
+Lakes,Rumbek East ,2012,corn,"17,490","16,790",0.959977359,lakes,rumbek east
+Lakes,Rumbek North ,2012,corn,"3,972","3,178",0.800105738,lakes,rumbek north
+Lakes,Wulu ,2012,corn,"11,565","11,103",0.960052226,lakes,wulu
+Lakes,Yirol East ,2012,corn,"13,540","11,916",0.88005997,lakes,yirol east
+Lakes,Yirol West ,2012,corn,"22,965","20,209",0.879991814,lakes,yirol west
+Lakes,Awerial ,2013,corn,"13,910","11,128",0.800001438,lakes,awerial
+Lakes,Cueibet ,2013,corn,"25,843","24,809",0.95998932,lakes,cueibet
+Lakes,Rumbek Centre ,2013,corn,"13,257","11,666",0.879988836,lakes,rumbek centre
+Lakes,Rumbek East ,2013,corn,"18,678","17,931",0.960006639,lakes,rumbek east
+Lakes,Rumbek North ,2013,corn,"4,269","4,098",0.959944719,lakes,rumbek north
+Lakes,Wulu ,2013,corn,"10,516","9,254",0.879993534,lakes,wulu
+Lakes,Yirol East ,2013,corn,"14,493","12,753",0.879942869,lakes,yirol east
+Lakes,Yirol West ,2013,corn,"23,566","20,738",0.879997114,lakes,yirol west
+Lakes,Awerial ,2014,corn,"5,846","4,209",0.719984263,lakes,awerial
+Lakes,Cueibet ,2014,corn,"17,883","17,168",0.960018118,lakes,cueibet
+Lakes,Rumbek Centre ,2014,corn,"14,925","16,716",1.119999196,lakes,rumbek centre
+Lakes,Rumbek East ,2014,corn,"14,008","15,689",1.120001999,lakes,rumbek east
+Lakes,Rumbek North ,2014,corn,"4,002","4,482",1.119937033,lakes,rumbek north
+Lakes,Wulu ,2014,corn,"8,230","7,901",0.960024787,lakes,wulu
+Lakes,Yirol East ,2014,corn,"10,567","8,454",0.800039746,lakes,yirol east
+Lakes,Yirol West ,2014,corn,"18,016","17,296",0.960035746,lakes,yirol west
+Lakes,Awerial ,2015,corn,"10,323","8,258",0.799963189,lakes,awerial
+Lakes,Cueibet ,2015,corn,"23,025","22,104",0.960000174,lakes,cueibet
+Lakes,Rumbek Centre ,2015,corn,"10,387","9,971",0.959950323,lakes,rumbek centre
+Lakes,Rumbek East ,2015,corn,"14,997","14,397",0.959992265,lakes,rumbek east
+Lakes,Rumbek North ,2015,corn,"2,748","2,198",0.799861723,lakes,rumbek north
+Lakes,Wulu ,2015,corn,"10,173","9,766",0.959992529,lakes,wulu
+Lakes,Yirol East ,2015,corn,"10,884","10,449",0.960033443,lakes,yirol east
+Lakes,Yirol West ,2015,corn,"14,710","14,121",0.959959484,lakes,yirol west
+Lakes,Awerial ,2016,corn,"7,291","5,833",0.800030174,lakes,awerial
+Lakes,Cueibet ,2016,corn,"25,521","24,500",0.959993887,lakes,cueibet
+Lakes,Rumbek Centre ,2016,corn,"14,409","12,680",0.880006385,lakes,rumbek centre
+Lakes,Rumbek East ,2016,corn,"17,490","16,790",0.959977359,lakes,rumbek east
+Lakes,Rumbek North ,2016,corn,"3,972","3,178",0.800105738,lakes,rumbek north
+Lakes,Wulu ,2016,corn,"11,565","11,103",0.960052226,lakes,wulu
+Lakes,Yirol East ,2016,corn,"13,540","11,916",0.88005997,lakes,yirol east
+Lakes,Yirol West ,2016,corn,"22,965","20,209",0.879991814,lakes,yirol west
+Lakes,Awerial ,2017,corn,"13,910","11,128",0.800001438,lakes,awerial
+Lakes,Cueibet ,2017,corn,"25,843","24,809",0.95998932,lakes,cueibet
+Lakes,Rumbek Centre ,2017,corn,"13,257","11,666",0.879988836,lakes,rumbek centre
+Lakes,Rumbek East ,2017,corn,"18,678","17,931",0.960006639,lakes,rumbek east
+Lakes,Rumbek North ,2017,corn,"4,269","4,098",0.959944719,lakes,rumbek north
+Lakes,Wulu ,2017,corn,"10,516","9,254",0.879993534,lakes,wulu
+Lakes,Yirol East ,2017,corn,"14,493","12,753",0.879942869,lakes,yirol east
+Lakes,Yirol West ,2017,corn,"23,566","20,738",0.879997114,lakes,yirol west
+Northern Bahr El Ghazal ,Aweil Centre ,2010,corn,"5,958","5,720",0.96005438,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2010,corn,"55,093","44,075",0.800011254,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2010,corn,"25,346","22,305",0.880020989,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2010,corn,"11,836","11,362",0.959953025,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2010,corn,"29,497","29,025",0.983998427,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2011,corn,"11,716","11,248",0.960054967,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2011,corn,"55,170","39,722",0.719993257,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2011,corn,"31,645","22,784",0.719988245,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2011,corn,"14,629","14,044",0.960011211,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2011,corn,"33,757","32,407",0.960008413,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2012,corn,"12,294","11,311",0.920042947,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2012,corn,"59,321","37,965",0.63999319,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2013,corn,"34,160","28,694",0.839988759,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2012,corn,"14,702","12,938",0.88001714,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2012,corn,"36,181","33,286",0.919985849,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2013,corn,"11,681","10,279",0.879977057,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2013,corn,"56,544","40,711",0.719988469,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2013,corn,"35,251","29,611",0.840004993,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2013,corn,"16,287","16,195",0.994351358,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2013,corn,"32,792","32,320",0.985606289,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2014,corn,"5,958","5,720",0.96005438,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2014,corn,"55,093","44,075",0.800011254,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2014,corn,"25,346","22,305",0.880020989,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2014,corn,"11,836","11,362",0.959953025,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2014,corn,"29,497","29,025",0.983998427,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2015,corn,"11,716","11,248",0.960054967,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2015,corn,"55,170","39,722",0.719993257,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2015,corn,"31,645","22,784",0.719988245,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2015,corn,"14,629","14,044",0.960011211,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2015,corn,"33,757","32,407",0.960008413,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2016,corn,"12,294","11,311",0.920042947,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2016,corn,"59,321","37,965",0.63999319,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2017,corn,"34,160","28,694",0.839988759,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2016,corn,"14,702","12,938",0.88001714,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2016,corn,"36,181","33,286",0.919985849,northern bahr el ghazal,aweil west
+Northern Bahr El Ghazal ,Aweil Centre ,2017,corn,"11,681","10,279",0.879977057,northern bahr el ghazal,aweil centre
+Northern Bahr El Ghazal ,Aweil East ,2017,corn,"56,544","40,711",0.719988469,northern bahr el ghazal,aweil east
+Northern Bahr El Ghazal ,Aweil North ,2017,corn,"35,251","29,611",0.840004993,northern bahr el ghazal,aweil north
+Northern Bahr El Ghazal ,Aweil South ,2017,corn,"16,287","16,195",0.994351358,northern bahr el ghazal,aweil south
+Northern Bahr El Ghazal ,Aweil West ,2017,corn,"32,792","32,320",0.985606289,northern bahr el ghazal,aweil west
+Unity,Abiemnhom ,2010,corn,470,150,0.319149081,unity,abiemnhom
+Unity,Guit ,2010,corn,0,0,1,unity,guit
+Unity,Koch ,2010,corn,"2,675","2,140",0.800007476,unity,koch
+Unity,Leer ,2010,corn,"2,328","1,117",0.47983334,unity,leer
+Unity,Mayendit ,2010,corn,"2,644","1,269",0.479974282,unity,mayendit
+Unity,Mayom ,2010,corn,0,0,1,unity,mayom
+Unity,Panyijiar ,2010,corn,"3,058",978,319.8064484,unity,panyijiar
+Unity,Pariang ,2010,corn,"3,612","2,601",0.720107417,unity,pariang
+Unity,Rubkona ,2010,corn,0,0,1,unity,rubkona
+Unity,Abiemnhom ,2011,corn,484,194,0.40082657,unity,abiemnhom
+Unity,Guit ,2011,corn,66,31,0.469697773,unity,guit
+Unity,Koch ,2011,corn,"2,755","1,763",0.639940474,unity,koch
+Unity,Leer ,2011,corn,400,224,0.56000011,unity,leer
+Unity,Mayendit ,2011,corn,"1,362",763,560.1645254,unity,mayendit
+Unity,Mayom ,2011,corn,"3,412","1,719",0.503824624,unity,mayom
+Unity,Panyijiar ,2011,corn,"2,799","1,120",0.400164339,unity,panyijiar
+Unity,Pariang ,2011,corn,"3,720","2,381",0.640063439,unity,pariang
+Unity,Rubkona ,2011,corn,850,408,0.480000061,unity,rubkona
+Unity,Abiemnhom ,2012,corn,648,259,0.399691451,unity,abiemnhom
+Unity,Guit ,2012,corn,488,234,0.479508303,unity,guit
+Unity,Koch ,2012,corn,"2,435","1,559",0.64026118,unity,koch
+Unity,Leer ,2012,corn,639,358,0.56025046,unity,leer
+Unity,Mayendit ,2012,corn,"1,265",709,560.4300846,unity,mayendit
+Unity,Mayom ,2012,corn,"3,770","1,900",0.503991937,unity,mayom
+Unity,Panyijiar ,2012,corn,"2,148",859,399.8883199,unity,panyijiar
+Unity,Pariang ,2012,corn,"3,826","2,449",0.6401035,unity,pariang
+Unity,Rubkona ,2012,corn,870,417,0.479310405,unity,rubkona
+Unity,Abiemnhom ,2013,corn,615,246,0.400000098,unity,abiemnhom
+Unity,Guit ,2013,corn,486,233,0.479423975,unity,guit
+Unity,Koch ,2013,corn,"2,403","1,538",0.640048271,unity,koch
+Unity,Leer ,2013,corn,752,421,0.559840484,unity,leer
+Unity,Mayendit ,2013,corn,"1,343",752,559.8988162,unity,mayendit
+Unity,Mayom ,2013,corn,"3,979","2,005",0.503907919,unity,mayom
+Unity,Panyijiar ,2013,corn,"2,892","1,157",0.4000899,unity,panyijiar
+Unity,Pariang ,2013,corn,"4,519","2,892",0.639972561,unity,pariang
+Unity,Rubkona ,2013,corn,613,294,0.479608568,unity,rubkona
+Unity,Abiemnhom ,2014,corn,470,150,0.319149081,unity,abiemnhom
+Unity,Guit ,2014,corn,0,0,1,unity,guit
+Unity,Koch ,2014,corn,"2,675","2,140",0.800007476,unity,koch
+Unity,Leer ,2014,corn,"2,328","1,117",0.47983334,unity,leer
+Unity,Mayendit ,2014,corn,"2,644","1,269",0.479974282,unity,mayendit
+Unity,Mayom ,2014,corn,0,0,1,unity,mayom
+Unity,Panyijiar ,2014,corn,"3,058",978,319.8064484,unity,panyijiar
+Unity,Pariang ,2014,corn,"3,612","2,601",0.720107417,unity,pariang
+Unity,Rubkona ,2014,corn,0,0,1,unity,rubkona
+Unity,Abiemnhom ,2015,corn,484,194,0.40082657,unity,abiemnhom
+Unity,Guit ,2015,corn,66,31,0.469697773,unity,guit
+Unity,Koch ,2015,corn,"2,755","1,763",0.639940474,unity,koch
+Unity,Leer ,2015,corn,400,224,0.56000011,unity,leer
+Unity,Mayendit ,2015,corn,"1,362",763,560.1645254,unity,mayendit
+Unity,Mayom ,2015,corn,"3,412","1,719",0.503824624,unity,mayom
+Unity,Panyijiar ,2015,corn,"2,799","1,120",0.400164339,unity,panyijiar
+Unity,Pariang ,2015,corn,"3,720","2,381",0.640063439,unity,pariang
+Unity,Rubkona ,2015,corn,850,408,0.480000061,unity,rubkona
+Unity,Abiemnhom ,2016,corn,648,259,0.399691451,unity,abiemnhom
+Unity,Guit ,2016,corn,488,234,0.479508303,unity,guit
+Unity,Koch ,2016,corn,"2,435","1,559",0.64026118,unity,koch
+Unity,Leer ,2016,corn,639,358,0.56025046,unity,leer
+Unity,Mayendit ,2016,corn,"1,265",709,560.4300846,unity,mayendit
+Unity,Mayom ,2016,corn,"3,770","1,900",0.503991937,unity,mayom
+Unity,Panyijiar ,2016,corn,"2,148",859,399.8883199,unity,panyijiar
+Unity,Pariang ,2016,corn,"3,826","2,449",0.6401035,unity,pariang
+Unity,Rubkona ,2016,corn,870,417,0.479310405,unity,rubkona
+Unity,Abiemnhom ,2017,corn,615,246,0.400000098,unity,abiemnhom
+Unity,Guit ,2017,corn,486,233,0.479423975,unity,guit
+Unity,Koch ,2017,corn,"2,403","1,538",0.640048271,unity,koch
+Unity,Leer ,2017,corn,752,421,0.559840484,unity,leer
+Unity,Mayendit ,2017,corn,"1,343",752,559.8988162,unity,mayendit
+Unity,Mayom ,2017,corn,"3,979","2,005",0.503907919,unity,mayom
+Unity,Panyijiar ,2017,corn,"2,892","1,157",0.4000899,unity,panyijiar
+Unity,Pariang ,2017,corn,"4,519","2,892",0.639972561,unity,pariang
+Unity,Rubkona ,2017,corn,613,294,0.479608568,unity,rubkona
+Upper Nile,Baliet ,2010,corn,300,192,0.64000012,upper nile,baliet
+Upper Nile,Fashoda ,2010,corn,991,634,0.639757857,upper nile,fashoda
+Upper Nile,Longochuk ,2010,corn,675,324,0.480000077,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2010,corn,"3,031","1,455",0.480056745,upper nile,luakpinynasir
+Upper Nile,Maban ,2010,corn,"3,461","1,661",0.479934125,upper nile,maban
+Upper Nile,Maiwut ,2010,corn,982,472,0.480651784,upper nile,maiwut
+Upper Nile,Malakal ,2010,corn,0,0,1,upper nile,malakal
+Upper Nile,Manyo ,2010,corn,0,0,1,upper nile,manyo
+Upper Nile,Melut ,2010,corn,"5,522","4,418",0.800076058,upper nile,melut
+Upper Nile,Panyikang ,2010,corn,0,0,1,upper nile,panyikang
+Upper Nile,Renk ,2010,corn,"19,751","9,480",0.47997833,upper nile,renk
+Upper Nile,Ulang ,2010,corn,"1,326",636,479.6019154,upper nile,ulang
+Upper Nile,Baliet ,2011,corn,618,297,0.480582608,upper nile,baliet
+Upper Nile,Fashoda ,2011,corn,319,153,0.479623988,upper nile,fashoda
+Upper Nile,Longochuk ,2011,corn,"2,783","1,336",0.480076174,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2011,corn,"12,488","7,993",0.640057335,upper nile,luakpinynasir
+Upper Nile,Maban ,2011,corn,"4,990","3,194",0.640087373,upper nile,maban
+Upper Nile,Maiwut ,2011,corn,"4,047","1,943",0.480121569,upper nile,maiwut
+Upper Nile,Malakal ,2011,corn,416,233,0.56009626,upper nile,malakal
+Upper Nile,Manyo ,2011,corn,"1,574","1,007",0.639794168,upper nile,manyo
+Upper Nile,Melut ,2011,corn,"1,673","1,338",0.799772877,upper nile,melut
+Upper Nile,Panyikang ,2011,corn,162,104,0.64197553,upper nile,panyikang
+Upper Nile,Renk ,2011,corn,"11,044","7,068",0.639988772,upper nile,renk
+Upper Nile,Ulang ,2011,corn,"4,552","2,185",0.48002021,upper nile,ulang
+Upper Nile,Baliet ,2012,corn,960,461,0.480208387,upper nile,baliet
+Upper Nile,Fashoda ,2012,corn,260,125,0.48076943,upper nile,fashoda
+Upper Nile,Longochuk ,2012,corn,699,336,0.48068677,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2012,corn,"14,306","9,156",0.6400137,upper nile,luakpinynasir
+Upper Nile,Maban ,2012,corn,"5,370","3,437",0.640043947,upper nile,maban
+Upper Nile,Maiwut ,2012,corn,"4,088","1,962",0.479954013,upper nile,maiwut
+Upper Nile,Malakal ,2012,corn,742,415,0.559299251,upper nile,malakal
+Upper Nile,Manyo ,2012,corn,"1,447",926,639.9005597,upper nile,manyo
+Upper Nile,Melut ,2012,corn,"4,162","3,329",0.799860647,upper nile,melut
+Upper Nile,Panyikang ,2012,corn,680,435,0.639705935,upper nile,panyikang
+Upper Nile,Renk ,2012,corn,"10,277","6,577",0.639976258,upper nile,renk
+Upper Nile,Ulang ,2012,corn,"5,112","2,454",0.480057119,upper nile,ulang
+Upper Nile,Baliet ,2013,corn,105,50,0.476190975,upper nile,baliet
+Upper Nile,Fashoda ,2013,corn,110,53,0.481818653,upper nile,fashoda
+Upper Nile,Longochuk ,2013,corn,"3,316","1,592",0.48011218,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2013,corn,"9,977","6,785",0.680067354,upper nile,luakpinynasir
+Upper Nile,Maban ,2013,corn,"15,047","9,630",0.639997076,upper nile,maban
+Upper Nile,Maiwut ,2013,corn,"1,859",967,520.1442096,upper nile,maiwut
+Upper Nile,Malakal ,2013,corn,484,271,0.559917446,upper nile,malakal
+Upper Nile,Manyo ,2013,corn,701,477,0.680456536,upper nile,manyo
+Upper Nile,Melut ,2013,corn,"5,065","4,052",0.800003949,upper nile,melut
+Upper Nile,Panyikang ,2013,corn,665,426,0.640601558,upper nile,panyikang
+Upper Nile,Renk ,2013,corn,"12,086","8,702",0.720008936,upper nile,renk
+Upper Nile,Ulang ,2013,corn,"3,897","1,870",0.479869647,upper nile,ulang
+Upper Nile,Baliet ,2014,corn,300,192,0.64000012,upper nile,baliet
+Upper Nile,Fashoda ,2014,corn,991,634,0.639757857,upper nile,fashoda
+Upper Nile,Longochuk ,2014,corn,675,324,0.480000077,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2014,corn,"3,031","1,455",0.480056745,upper nile,luakpinynasir
+Upper Nile,Maban ,2014,corn,"3,461","1,661",0.479934125,upper nile,maban
+Upper Nile,Maiwut ,2014,corn,982,472,0.480651784,upper nile,maiwut
+Upper Nile,Malakal ,2014,corn,0,0,1,upper nile,malakal
+Upper Nile,Manyo ,2014,corn,0,0,1,upper nile,manyo
+Upper Nile,Melut ,2014,corn,"5,522","4,418",0.800076058,upper nile,melut
+Upper Nile,Panyikang ,2014,corn,0,0,1,upper nile,panyikang
+Upper Nile,Renk ,2014,corn,"19,751","9,480",0.47997833,upper nile,renk
+Upper Nile,Ulang ,2014,corn,"1,326",636,479.6019154,upper nile,ulang
+Upper Nile,Baliet ,2015,corn,618,297,0.480582608,upper nile,baliet
+Upper Nile,Fashoda ,2015,corn,319,153,0.479623988,upper nile,fashoda
+Upper Nile,Longochuk ,2015,corn,"2,783","1,336",0.480076174,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2015,corn,"12,488","7,993",0.640057335,upper nile,luakpinynasir
+Upper Nile,Maban ,2015,corn,"4,990","3,194",0.640087373,upper nile,maban
+Upper Nile,Maiwut ,2015,corn,"4,047","1,943",0.480121569,upper nile,maiwut
+Upper Nile,Malakal ,2015,corn,416,233,0.56009626,upper nile,malakal
+Upper Nile,Manyo ,2015,corn,"1,574","1,007",0.639794168,upper nile,manyo
+Upper Nile,Melut ,2015,corn,"1,673","1,338",0.799772877,upper nile,melut
+Upper Nile,Panyikang ,2015,corn,162,104,0.64197553,upper nile,panyikang
+Upper Nile,Renk ,2015,corn,"11,044","7,068",0.639988772,upper nile,renk
+Upper Nile,Ulang ,2015,corn,"4,552","2,185",0.48002021,upper nile,ulang
+Upper Nile,Baliet ,2016,corn,960,461,0.480208387,upper nile,baliet
+Upper Nile,Fashoda ,2016,corn,260,125,0.48076943,upper nile,fashoda
+Upper Nile,Longochuk ,2016,corn,699,336,0.48068677,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2016,corn,"14,306","9,156",0.6400137,upper nile,luakpinynasir
+Upper Nile,Maban ,2016,corn,"5,370","3,437",0.640043947,upper nile,maban
+Upper Nile,Maiwut ,2016,corn,"4,088","1,962",0.479954013,upper nile,maiwut
+Upper Nile,Malakal ,2016,corn,742,415,0.559299251,upper nile,malakal
+Upper Nile,Manyo ,2016,corn,"1,447",926,639.9005597,upper nile,manyo
+Upper Nile,Melut ,2016,corn,"4,162","3,329",0.799860647,upper nile,melut
+Upper Nile,Panyikang ,2016,corn,680,435,0.639705935,upper nile,panyikang
+Upper Nile,Renk ,2016,corn,"10,277","6,577",0.639976258,upper nile,renk
+Upper Nile,Ulang ,2016,corn,"5,112","2,454",0.480057119,upper nile,ulang
+Upper Nile,Baliet ,2017,corn,105,50,0.476190975,upper nile,baliet
+Upper Nile,Fashoda ,2017,corn,110,53,0.481818653,upper nile,fashoda
+Upper Nile,Longochuk ,2017,corn,"3,316","1,592",0.48011218,upper nile,longochuk
+Upper Nile,Luakpiny/Nasir ,2017,corn,"9,977","6,785",0.680067354,upper nile,luakpinynasir
+Upper Nile,Maban ,2017,corn,"15,047","9,630",0.639997076,upper nile,maban
+Upper Nile,Maiwut ,2017,corn,"1,859",967,520.1442096,upper nile,maiwut
+Upper Nile,Malakal ,2017,corn,484,271,0.559917446,upper nile,malakal
+Upper Nile,Manyo ,2017,corn,701,477,0.680456536,upper nile,manyo
+Upper Nile,Melut ,2017,corn,"5,065","4,052",0.800003949,upper nile,melut
+Upper Nile,Panyikang ,2017,corn,665,426,0.640601558,upper nile,panyikang
+Upper Nile,Renk ,2017,corn,"12,086","8,702",0.720008936,upper nile,renk
+Upper Nile,Ulang ,2017,corn,"3,897","1,870",0.479869647,upper nile,ulang
+Warrap ,Abyei ,2010,corn,"2,256","2,346",1.039891849,warrap,abyei
+Warrap ,Gogrial East ,2010,corn,"10,758","8,606",0.799964678,warrap,gogrial east
+Warrap ,Gogrial West ,2010,corn,"41,781","46,794",1.11998248,warrap,gogrial west
+Warrap ,Tonj East ,2010,corn,"10,784","8,627",0.799983309,warrap,tonj east
+Warrap ,Tonj North ,2010,corn,"18,736","14,989",0.800011742,warrap,tonj north
+Warrap ,Tonj South ,2010,corn,"13,654","14,200",1.039987989,warrap,tonj south
+Warrap ,Twic ,2010,corn,"26,333","34,233",1.300002658,warrap,twic
+Warrap ,Abyei ,2011,corn,"4,840","5,034",1.040081816,warrap,abyei
+Warrap ,Gogrial East ,2011,corn,"12,663","10,131",0.800048961,warrap,gogrial east
+Warrap ,Gogrial West ,2011,corn,"45,425","36,340",0.80000044,warrap,gogrial west
+Warrap ,Tonj East ,2011,corn,"9,719","6,220",0.639987242,warrap,tonj east
+Warrap ,Tonj North ,2011,corn,"20,505","16,404",0.800000975,warrap,tonj north
+Warrap ,Tonj South ,2011,corn,"12,370","12,865",1.040015845,warrap,tonj south
+Warrap ,Twic ,2011,corn,"25,315","26,327",1.039976141,warrap,twic
+Warrap ,Abyei ,2012,corn,"8,004","8,324",1.039979511,warrap,abyei
+Warrap ,Gogrial East ,2012,corn,"13,634","10,908",0.800060143,warrap,gogrial east
+Warrap ,Gogrial West ,2012,corn,"54,426","52,249",0.960000808,warrap,gogrial west
+Warrap ,Tonj East ,2012,corn,"10,606","6,788",0.64001848,warrap,tonj east
+Warrap ,Tonj North ,2012,corn,"22,809","18,247",0.799992108,warrap,tonj north
+Warrap ,Tonj South ,2012,corn,"15,751","16,381",1.039997207,warrap,tonj south
+Warrap ,Twic ,2012,corn,"29,740","28,550",0.959986685,warrap,twic
+Warrap ,Abyei ,2013,corn,"7,557","6,650",0.879980416,warrap,abyei
+Warrap ,Gogrial East ,2013,corn,"10,916","7,859",0.719954929,warrap,gogrial east
+Warrap ,Gogrial West ,2013,corn,"51,623","51,623",1,warrap,gogrial west
+Warrap ,Tonj East ,2013,corn,"9,829","6,291",0.640048428,warrap,tonj east
+Warrap ,Tonj North ,2013,corn,"24,985","19,988",0.8000008,warrap,tonj north
+Warrap ,Tonj South ,2013,corn,"18,979","19,738",1.039991359,warrap,tonj south
+Warrap ,Twic ,2013,corn,"31,787","30,516",0.960015226,warrap,twic
+Warrap ,Abyei ,2014,corn,"2,256","2,346",1.039891849,warrap,abyei
+Warrap ,Gogrial East ,2014,corn,"10,758","8,606",0.799964678,warrap,gogrial east
+Warrap ,Gogrial West ,2014,corn,"41,781","46,794",1.11998248,warrap,gogrial west
+Warrap ,Tonj East ,2014,corn,"10,784","8,627",0.799983309,warrap,tonj east
+Warrap ,Tonj North ,2014,corn,"18,736","14,989",0.800011742,warrap,tonj north
+Warrap ,Tonj South ,2014,corn,"13,654","14,200",1.039987989,warrap,tonj south
+Warrap ,Twic ,2014,corn,"26,333","34,233",1.300002658,warrap,twic
+Warrap ,Abyei ,2015,corn,"4,840","5,034",1.040081816,warrap,abyei
+Warrap ,Gogrial East ,2015,corn,"12,663","10,131",0.800048961,warrap,gogrial east
+Warrap ,Gogrial West ,2015,corn,"45,425","36,340",0.80000044,warrap,gogrial west
+Warrap ,Tonj East ,2015,corn,"9,719","6,220",0.639987242,warrap,tonj east
+Warrap ,Tonj North ,2015,corn,"20,505","16,404",0.800000975,warrap,tonj north
+Warrap ,Tonj South ,2015,corn,"12,370","12,865",1.040015845,warrap,tonj south
+Warrap ,Twic ,2015,corn,"25,315","26,327",1.039976141,warrap,twic
+Warrap ,Abyei ,2016,corn,"8,004","8,324",1.039979511,warrap,abyei
+Warrap ,Gogrial East ,2016,corn,"13,634","10,908",0.800060143,warrap,gogrial east
+Warrap ,Gogrial West ,2016,corn,"54,426","52,249",0.960000808,warrap,gogrial west
+Warrap ,Tonj East ,2016,corn,"10,606","6,788",0.64001848,warrap,tonj east
+Warrap ,Tonj North ,2016,corn,"22,809","18,247",0.799992108,warrap,tonj north
+Warrap ,Tonj South ,2016,corn,"15,751","16,381",1.039997207,warrap,tonj south
+Warrap ,Twic ,2016,corn,"29,740","28,550",0.959986685,warrap,twic
+Warrap ,Abyei ,2017,corn,"7,557","6,650",0.879980416,warrap,abyei
+Warrap ,Gogrial East ,2017,corn,"10,916","7,859",0.719954929,warrap,gogrial east
+Warrap ,Gogrial West ,2017,corn,"51,623","51,623",1,warrap,gogrial west
+Warrap ,Tonj East ,2017,corn,"9,829","6,291",0.640048428,warrap,tonj east
+Warrap ,Tonj North ,2017,corn,"24,985","19,988",0.8000008,warrap,tonj north
+Warrap ,Tonj South ,2017,corn,"18,979","19,738",1.039991359,warrap,tonj south
+Warrap ,Twic ,2017,corn,"31,787","30,516",0.960015226,warrap,twic
+Western Bahr El Ghazal ,Jur River ,2010,corn,"23,775","24,726",1.039999832,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2010,corn,"11,056","12,383",1.12002424,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2010,corn,"34,183","38,285",1.120000819,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2011,corn,"22,040","19,395",0.87999147,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2011,corn,"11,388","10,932",0.959958202,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2011,corn,"31,688","27,885",0.879986493,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2012,corn,"21,053","18,526",0.879970171,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2012,corn,"6,260","6,010",0.960064536,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2012,corn,"23,768","20,916",0.880007237,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2013,corn,"14,985","13,187",0.880014147,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2013,corn,"4,025","3,864",0.960000994,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2013,corn,"17,780","15,647",0.880034421,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2014,corn,"23,775","24,726",1.039999832,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2014,corn,"11,056","12,383",1.12002424,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2014,corn,"34,183","38,285",1.120000819,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2015,corn,"22,040","19,395",0.87999147,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2015,corn,"11,388","10,932",0.959958202,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2015,corn,"31,688","27,885",0.879986493,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2016,corn,"21,053","18,526",0.879970171,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2016,corn,"6,260","6,010",0.960064536,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2016,corn,"23,768","20,916",0.880007237,western bahr el ghazal,wau
+Western Bahr El Ghazal ,Jur River ,2017,corn,"14,985","13,187",0.880014147,western bahr el ghazal,jur river
+Western Bahr El Ghazal ,Raga ,2017,corn,"4,025","3,864",0.960000994,western bahr el ghazal,raga
+Western Bahr El Ghazal ,Wau ,2017,corn,"17,780","15,647",0.880034421,western bahr el ghazal,wau
+Western Equatoria ,Ezo ,2010,corn,"28,332","36,265",1.280000424,western equatoria,ezo
+Western Equatoria ,Ibba ,2010,corn,"14,264","15,975",1.119951487,western equatoria,ibba
+Western Equatoria ,Maridi ,2010,corn,"20,852","25,022",1.199979858,western equatoria,maridi
+Western Equatoria ,Mundri East ,2010,corn,"6,891","6,891",1,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2010,corn,"7,050","9,588",1.359994894,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2010,corn,"5,846","4,676",0.799866578,western equatoria,mvolo
+Western Equatoria ,Nagero ,2010,corn,"2,311","1,849",0.800095193,western equatoria,nagero
+Western Equatoria ,Nzara ,2010,corn,"23,329","27,994",1.199964851,western equatoria,nzara
+Western Equatoria ,Tambura ,2010,corn,"20,696","23,180",1.120022613,western equatoria,tambura
+Western Equatoria ,Yambio ,2010,corn,"37,770","45,324",1.19999947,western equatoria,yambio
+Western Equatoria ,Ezo ,2011,corn,"11,580","12,970",1.120033506,western equatoria,ezo
+Western Equatoria ,Ibba ,2011,corn,"14,692","15,279",1.039953444,western equatoria,ibba
+Western Equatoria ,Maridi ,2011,corn,"15,511","16,132",1.040035845,western equatoria,maridi
+Western Equatoria ,Mundri East ,2011,corn,"3,154","2,524",0.800259979,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2011,corn,"2,905","2,556",0.879866442,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2011,corn,"4,379","3,153",0.720033797,western equatoria,mvolo
+Western Equatoria ,Nagero ,2011,corn,"1,731","1,524",0.880422853,western equatoria,nagero
+Western Equatoria ,Nzara ,2011,corn,"23,006","25,767",1.120011649,western equatoria,nzara
+Western Equatoria ,Tambura ,2011,corn,"21,317","22,170",1.040014824,western equatoria,tambura
+Western Equatoria ,Yambio ,2011,corn,"33,156","34,483",1.040022801,western equatoria,yambio
+Western Equatoria ,Ezo ,2012,corn,"7,348","8,230",1.120031028,western equatoria,ezo
+Western Equatoria ,Ibba ,2012,corn,"13,021","13,542",1.040011981,western equatoria,ibba
+Western Equatoria ,Maridi ,2012,corn,"14,787","15,379",1.040034895,western equatoria,maridi
+Western Equatoria ,Mundri East ,2012,corn,"3,101","2,481",0.800070943,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2012,corn,"3,158","2,779",0.879991134,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2012,corn,"4,705","3,388",0.720090965,western equatoria,mvolo
+Western Equatoria ,Nagero ,2012,corn,"1,914","1,684",0.879839089,western equatoria,nagero
+Western Equatoria ,Nzara ,2012,corn,"19,758","22,129",1.120001417,western equatoria,nzara
+Western Equatoria ,Tambura ,2012,corn,"23,202","24,130",1.03999638,western equatoria,tambura
+Western Equatoria ,Yambio ,2012,corn,"22,302","23,194",1.039996234,western equatoria,yambio
+Western Equatoria ,Ezo ,2013,corn,"9,215","11,058",1.19999783,western equatoria,ezo
+Western Equatoria ,Ibba ,2013,corn,"7,825","8,138",1.039999489,western equatoria,ibba
+Western Equatoria ,Maridi ,2013,corn,"11,530","11,991",1.039982307,western equatoria,maridi
+Western Equatoria ,Mundri East ,2013,corn,"3,339","2,938",0.87990776,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2013,corn,"3,000","2,880",0.960001333,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2013,corn,"4,517","2,891",0.640034535,western equatoria,mvolo
+Western Equatoria ,Nagero ,2013,corn,"1,273","1,121",0.880606394,western equatoria,nagero
+Western Equatoria ,Nzara ,2013,corn,"16,097","20,604",1.279988321,western equatoria,nzara
+Western Equatoria ,Tambura ,2013,corn,"21,868","24,492",1.119992135,western equatoria,tambura
+Western Equatoria ,Yambio ,2013,corn,"22,412","24,205",1.080001428,western equatoria,yambio
+Western Equatoria ,Ezo ,2014,corn,"28,332","36,265",1.280000424,western equatoria,ezo
+Western Equatoria ,Ibba ,2014,corn,"14,264","15,975",1.119951487,western equatoria,ibba
+Western Equatoria ,Maridi ,2014,corn,"20,852","25,022",1.199979858,western equatoria,maridi
+Western Equatoria ,Mundri East ,2014,corn,"6,891","6,891",1,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2014,corn,"7,050","9,588",1.359994894,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2014,corn,"5,846","4,676",0.799866578,western equatoria,mvolo
+Western Equatoria ,Nagero ,2014,corn,"2,311","1,849",0.800095193,western equatoria,nagero
+Western Equatoria ,Nzara ,2014,corn,"23,329","27,994",1.199964851,western equatoria,nzara
+Western Equatoria ,Tambura ,2014,corn,"20,696","23,180",1.120022613,western equatoria,tambura
+Western Equatoria ,Yambio ,2014,corn,"37,770","45,324",1.19999947,western equatoria,yambio
+Western Equatoria ,Ezo ,2015,corn,"11,580","12,970",1.120033506,western equatoria,ezo
+Western Equatoria ,Ibba ,2015,corn,"14,692","15,279",1.039953444,western equatoria,ibba
+Western Equatoria ,Maridi ,2015,corn,"15,511","16,132",1.040035845,western equatoria,maridi
+Western Equatoria ,Mundri East ,2015,corn,"3,154","2,524",0.800259979,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2015,corn,"2,905","2,556",0.879866442,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2015,corn,"4,379","3,153",0.720033797,western equatoria,mvolo
+Western Equatoria ,Nagero ,2015,corn,"1,731","1,524",0.880422853,western equatoria,nagero
+Western Equatoria ,Nzara ,2015,corn,"23,006","25,767",1.120011649,western equatoria,nzara
+Western Equatoria ,Tambura ,2015,corn,"21,317","22,170",1.040014824,western equatoria,tambura
+Western Equatoria ,Yambio ,2015,corn,"33,156","34,483",1.040022801,western equatoria,yambio
+Western Equatoria ,Ezo ,2016,corn,"7,348","8,230",1.120031028,western equatoria,ezo
+Western Equatoria ,Ibba ,2016,corn,"13,021","13,542",1.040011981,western equatoria,ibba
+Western Equatoria ,Maridi ,2016,corn,"14,787","15,379",1.040034895,western equatoria,maridi
+Western Equatoria ,Mundri East ,2016,corn,"3,101","2,481",0.800070943,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2016,corn,"3,158","2,779",0.879991134,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2016,corn,"4,705","3,388",0.720090965,western equatoria,mvolo
+Western Equatoria ,Nagero ,2016,corn,"1,914","1,684",0.879839089,western equatoria,nagero
+Western Equatoria ,Nzara ,2016,corn,"19,758","22,129",1.120001417,western equatoria,nzara
+Western Equatoria ,Tambura ,2016,corn,"23,202","24,130",1.03999638,western equatoria,tambura
+Western Equatoria ,Yambio ,2016,corn,"22,302","23,194",1.039996234,western equatoria,yambio
+Western Equatoria ,Ezo ,2017,corn,"9,215","11,058",1.19999783,western equatoria,ezo
+Western Equatoria ,Ibba ,2017,corn,"7,825","8,138",1.039999489,western equatoria,ibba
+Western Equatoria ,Maridi ,2017,corn,"11,530","11,991",1.039982307,western equatoria,maridi
+Western Equatoria ,Mundri East ,2017,corn,"3,339","2,938",0.87990776,western equatoria,mundri east
+Western Equatoria ,Mundri West ,2017,corn,"3,000","2,880",0.960001333,western equatoria,mundri west
+Western Equatoria ,Mvolo ,2017,corn,"4,517","2,891",0.640034535,western equatoria,mvolo
+Western Equatoria ,Nagero ,2017,corn,"1,273","1,121",0.880606394,western equatoria,nagero
+Western Equatoria ,Nzara ,2017,corn,"16,097","20,604",1.279988321,western equatoria,nzara
+Western Equatoria ,Tambura ,2017,corn,"21,868","24,492",1.119992135,western equatoria,tambura
+Western Equatoria ,Yambio ,2017,corn,"22,412","24,205",1.080001428,western equatoria,yambio
