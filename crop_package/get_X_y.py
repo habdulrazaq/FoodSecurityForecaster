@@ -42,4 +42,4 @@ def get_X_y(country_code='SSD', county='Juba'):
 
     return X_train, X_test, y_train, y_test
 
-get_X_y()
+ 
