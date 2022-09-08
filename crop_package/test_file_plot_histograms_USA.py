@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import pandas as pd
-print(pd.__version__)
+
 penny_data = pd.read_pickle('../raw_data/raw_pixels/USA/Arizona.zip')
 
 penny_df = penny_data[penny_data['band'] == 'NDVI']
@@ -21,4 +21,3 @@ penny_histogram_df = pd.DataFrame(histograms, index=dates)
 
 print(penny_histogram_df)
 
-penny_histogram_df.to_csv('../data/ARIZONA_data.npz')
