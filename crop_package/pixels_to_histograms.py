@@ -12,7 +12,7 @@ def build_histograms(country_code='SSD', num_bins=10):
 
     df_list = []
 
-    for file in os.listdir(data_path)[7:15]:
+    for file in os.listdir(data_path)[9:10]:
         file_path = os.path.join(data_path, file)
         print(file_path)
         df = pd.read_pickle(file_path)
@@ -44,7 +44,7 @@ def build_histograms(country_code='SSD', num_bins=10):
                     X[year_index,county_index,sample_index,:,band_index] = hist
 
     county_names = np.array([df.attrs['state_name'] for df in df_list])
-    np.savez_compressed(f'../data/{country_code}_data', X=X, county_names=county_names)
+    np.savez_compressed(f'../data/{country_code}_kansas_data.npz', X=X, county_names=county_names)
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])
