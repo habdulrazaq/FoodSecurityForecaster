@@ -22,12 +22,12 @@ def get_X_y(country_code='USA'):
 
 
 
-     y = np.zeros(X.shape[:2])
-     for i, (year, group) in enumerate(year_groups):
-         y[i] = group['Yield']
+    y = np.zeros(X.shape[:2])
+    for i, (year, group) in enumerate(year_groups):
+        y[i] = group['Yield']
 
 
-     return X, y
+    return X, y
 
- def split_years(*arrays, test_size=1):
-     return sum(((array[:-test_size], array[-test_size:]) for array in arrays), ())
+def split_years(*arrays, test_size=1):
+    return sum(((array[:-test_size], array[-test_size:]) for array in arrays), ())
