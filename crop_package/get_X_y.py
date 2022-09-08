@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def get_X_y(country_code='SSD'):
+def get_X_y(country_code='USA'):
 
     # 0. import df
     X_data = np.load(f'../data/{country_code}_data.npz')
@@ -31,7 +31,7 @@ def get_X_y(country_code='SSD'):
 #         print(year_group['County'].nunique())
 #         #y[i] = year_group['Yield']
 #     exit(0)
-    
+
 #     import matplotlib.pyplot as plt
 #     plt.imshow(y)
 #     plt.show()
