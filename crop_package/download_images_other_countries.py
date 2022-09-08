@@ -63,7 +63,7 @@ def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01',
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    for state_name in state_names[16:]:
+    for state_name in state_names[22:]:
 
     #state_name = ['Pennsylvania']
 
