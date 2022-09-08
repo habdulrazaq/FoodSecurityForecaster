@@ -68,13 +68,13 @@ def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01',
 
     # state_names = pd.read_csv('tmp.csv')['NAME1_']
     # os.remove('tmp.csv')
-    state_name = ['Alabama']
+    state_name = ['Mississippi']
 
     list_df = []
     for start_year in range(2000, 2022):
         print(f'working on {state_name}...')
 
-        df = download_map(country_code, 'Alabama', (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
+        df = download_map(country_code, 'Mississippi', (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
         list_df.append(df)
 
     df = pd.concat(list_df)
