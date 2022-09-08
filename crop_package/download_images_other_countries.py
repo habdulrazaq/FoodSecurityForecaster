@@ -63,25 +63,23 @@ def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01',
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    #ee_shape = geemap.shp_to_ee(states_shp)
-    #geemap.common.ee_to_csv(ee_shape, "tmp.csv", timeout=1000)
+    for state_name in state_names[4:]:
 
-    # state_names = pd.read_csv('tmp.csv')['NAME1_']
-    # os.remove('tmp.csv')
-    state_name = ['Mississippi']
+    #state_name = ['Pennsylvania']
 
-    list_df = []
-    for start_year in range(2000, 2022):
-        print(f'working on {state_name}...')
+        list_df = []
+        for start_year in range(2000, 2022):
+            print(f'working on {state_name}...')
 
-        df = download_map(country_code, 'Mississippi', (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
-        list_df.append(df)
+            df = download_map(country_code, state_name, (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
+            list_df.append(df)
 
-    df = pd.concat(list_df)
-    df.to_pickle(f'../raw_data/raw_pixels/USA/{state_name}.zip')
-    print(f"Downloaded data for {state_name}...")
+        df = pd.concat(list_df)
+        df.to_pickle(f'../raw_data/raw_pixels/USA/{state_name}.zip')
+        print(f"Downloaded data for {state_name}...")
 
 
 if __name__ == "__main__":
+    print(pd.__version__)
     ee.Initialize()
     load_all(sys.argv[1], num_pixels=750)

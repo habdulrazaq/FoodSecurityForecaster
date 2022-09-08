@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def get_X_y(country_code='SSD'):
+def get_X_y(country_code='USA'):
 
     # 0. import df
     X_data = np.load(f'../data/{country_code}_data.npz')
@@ -20,9 +20,12 @@ def get_X_y(country_code='SSD'):
                       .sort_values('County') \
                       .groupby('Year')
 
+
+
      y = np.zeros(X.shape[:2])
      for i, (year, group) in enumerate(year_groups):
          y[i] = group['Yield']
+
 
      return X, y
 
