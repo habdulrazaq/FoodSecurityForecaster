@@ -12,7 +12,7 @@ def build_histograms(country_code='SSD', num_bins=10):
 
     df_list = []
 
-    for file in os.listdir(data_path)[9:10]:
+    for file in os.listdir(data_path):
         file_path = os.path.join(data_path, file)
         print(file_path)
         df = pd.read_pickle(file_path)
