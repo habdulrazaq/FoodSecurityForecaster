@@ -6,7 +6,7 @@ wheel>=0.29
 
 # data science
 numpy
-pandas
+pandas==1.4.4
 scikit-learn
 
 # tests/linter
