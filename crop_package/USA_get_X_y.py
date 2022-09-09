@@ -4,7 +4,7 @@ import numpy as np
 def get_X_y(country_code='USA'):
 
     # 0. import df
-    X_data = np.load(f'../data/USA_data.npz')
+    X_data = np.load(f'../data/USA_kansas_data.npz')
     X = X_data['X']
     print("X shape:", X.shape)
 

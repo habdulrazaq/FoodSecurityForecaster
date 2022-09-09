@@ -18,11 +18,13 @@ import pandas as pd
 
 state_names = pd.read_csv('../raw_data/state_names_USA.csv')['NAME1_,C,33']
 
-
+# MYD11A2 (2002-2022) 8-day Aqua Land Surface Temperature and Emissivity 1km
+# MOD09Q1 (8-day surface spectral reflectance of bands 1 and 2 at 250m resolution)
+# https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q1
 def download_map(country_code,
                  state_name,
                  date_range=('2021-01-01','2022-12-30'),
-                 modis_collection='006/MOD13A1',
+                 modis_collection='006/MYD11A2',
                  num_pixels=1000):
     Map = geemap.Map()
     lower_case_country_code = country_code.lower
@@ -40,7 +42,7 @@ def download_map(country_code,
 
     region = state_ee.geometry()
 
-    samples = image_collection.sample(region, scale=300 , numPixels=num_pixels)
+    samples = image_collection.sample(region, scale=250 , numPixels=num_pixels)
 
     features = samples.getInfo()['features']
 
@@ -59,16 +61,14 @@ def download_map(country_code,
 
     return df
 
-def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01', '2018-01-01'), modis_collection='006/MOD13A1', num_pixels=1000):
+def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01', '2018-01-01'), modis_collection='006/MYD11A2', num_pixels=1000):
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    for state_name in state_names[16:]:
-
-    #state_name = ['Pennsylvania']
+    for state_name in state_names[6:]:
 
         list_df = []
-        for start_year in range(2000, 2022):
+        for start_year in range(2002, 2015):
             print(f'working on {state_name}...')
 
             df = download_map(country_code, state_name, (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
@@ -82,4 +82,4 @@ def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01',
 if __name__ == "__main__":
     print(pd.__version__)
     ee.Initialize()
-    load_all(sys.argv[1], num_pixels=750)
+    load_all(sys.argv[1], num_pixels=1000)
