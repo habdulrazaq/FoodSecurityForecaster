@@ -29,8 +29,10 @@ def build_histograms(country_code='SSD', num_bins=10):
         bins[0] = -float('inf')
         bins[-1] = float('inf')
 
+    years = stacked_df['date'].dt.year.unique()
+
     num_bands = stacked_df['band'].nunique()
-    num_years = stacked_df['date'].dt.year.nunique()
+    num_years = len(years)
     num_counties = len(df_list)
     num_samples = 46
 
@@ -44,7 +46,7 @@ def build_histograms(country_code='SSD', num_bins=10):
                     X[year_index,county_index,sample_index,:,band_index] = hist
 
     county_names = np.array([df.attrs['state_name'] for df in df_list])
-    np.savez_compressed(f'../data/USA_data_MYD11A2.npz', X=X, county_names=county_names)
+    np.savez_compressed(f'../data/USA_data_MYD11A2.npz', X=X, county_names=county_names, years=years.to_numpy())
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])
