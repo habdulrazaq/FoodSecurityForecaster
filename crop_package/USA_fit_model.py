@@ -16,6 +16,9 @@ def fit_model(build_model=cnn):
 
     X, y = USA_get_X_y.get_X_y()
 
+    plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
+    plt.show()
+
     X_train, X_test, y_train, y_test = USA_get_X_y.split_years(X, y, test_size=2)
 
     X_train, X_valid, y_train, y_valid = USA_get_X_y.split_years(X_train, y_train, test_size=2)
@@ -34,10 +37,17 @@ def fit_model(build_model=cnn):
     X_train = X_train.reshape((-1,) + X_train.shape[2:])
     X_valid = X_valid.reshape((-1,) + X_valid.shape[2:])
     X_test = X_test.reshape((-1,) + X_test.shape[2:])
+    X = X.reshape((-1,) + X.shape[2:])
+
 
     y_train = y_train.flatten()
     y_valid = y_valid.flatten()
     y_test = y_test.flatten()
+    y = y.flatten()
+
+    print(y)
+
+
 
     print(X_train.shape)
     print(y_train.shape)
@@ -50,12 +60,15 @@ def fit_model(build_model=cnn):
                         callbacks=[es],
                         verbose = 1)
 
-    print("cnn test rmse:", model.evaluate(X_test, y_test) ** 0.5)
+    plt.scatter(np.arange(len(y)), y, color='green')
+    plt.scatter(np.arange(len(y)), model.predict(X), color='red')
+    plt.show()
+    print("model test rmse:", model.evaluate(X_test, y_test) ** 0.5)
     print("baseline test rmse:", baseline_score ** 0.5)
 
     return model, history
 
-model, history = fit_model(lstm)
+model, history = fit_model(cnn)
 
 
 t = np.arange(len(history.history['loss']))
