@@ -62,25 +62,24 @@ def download_map(country_code,
     return df
 
 
-def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MOD09Q1', num_pixels=1000):
+def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MYD11A2', num_pixels=1000):
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    for state_name in state_names[0:1]:
+    for state_name in state_names[0:]:
 
         list_df = []
         year_lst = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2017,2018,2019,2020,2021]
         for start_year in year_lst:
             print(f"working on {start_year}")
 
-        
             print(f'working on {state_name}...')
 
             df = download_map(country_code, state_name, (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
             list_df.append(df)
 
         df = pd.concat(list_df)
-        df.to_pickle(f'../raw_data/raw_pixels/USA/{state_name}.zip')
+        df.to_pickle(f'../raw_data/raw_pixels/USA/Surface_temp_1000p_scale250_2002-2022-minus2011/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
 
 
