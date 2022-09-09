@@ -65,7 +65,7 @@ def load_all(country_code='SSD', admin_level='admin1', date_range=('2010-01-01',
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    for state_name in state_names[0:]:
+    for state_name in state_names[6:]:
 
         list_df = []
         for start_year in range(2002, 2015):
