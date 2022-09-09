@@ -1,16 +1,23 @@
 from tensorflow.keras import layers, models, losses
+from tensorflow.keras import optimizers
 
 
 def lstm():
 
+    norm_layer = layers.Normalization(input_shape=(46, 10, 4))
+    #(14, 46, 10, 4)
     model = models.Sequential([
-        layers.LSTM(units=256, activation='tanh'))
-        layers.add(Dense(64, activation='relu'))
-        layers.add(Flatten())
-        layers.add(Dropout(0.5))
-        layers.add(Dense(1, activation='relu'))
+        norm_layer,
+        layers.Reshape((46, 10 * 4)),
+        layers.LSTM(units=128, activation='tanh', recurrent_dropout=0.1),
+        layers.LayerNormalization(),
+        layers.Dense(64, activation='relu'),
+        layers.Flatten(),
+        layers.Dropout(0.5),
+        layers.Dense(1, activation='relu'),
     ])
 
-    model.compile(loss=losses.mse, optimizer='adam')
+    optimizer=optimizers.Adam(learning_rate=5e-4)
+    model.compile(loss=losses.mse, optimizer=optimizer)
 
-    return model
+    return model, norm_layer
