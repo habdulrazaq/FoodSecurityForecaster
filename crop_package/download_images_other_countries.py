@@ -19,7 +19,7 @@ import pandas as pd
 state_names = pd.read_csv('../raw_data/state_names_USA.csv')['NAME1_,C,33']
 
 # MYD11A2 (2002-2022) 8-day Aqua Land Surface Temperature and Emissivity 1km
-# MOD09A1 (8-day surface spectral reflectance of bands 1 and 2 at 500m resolution)
+
 # https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q1
 def download_map(country_code,
                  state_name,
@@ -61,6 +61,7 @@ def download_map(country_code,
 
     return df
 
+
 def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MOD09Q1', num_pixels=1000):
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
@@ -71,6 +72,8 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
         year_lst = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2017,2018,2019,2020,2021]
         for start_year in year_lst:
             print(f"working on {start_year}")
+
+        
             print(f'working on {state_name}...')
 
             df = download_map(country_code, state_name, (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
