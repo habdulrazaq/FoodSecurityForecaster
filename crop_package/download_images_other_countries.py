@@ -21,10 +21,11 @@ state_names = pd.read_csv('../raw_data/state_names_USA.csv')['NAME1_,C,33']
 # MYD11A2 (2002-2022) 8-day Aqua Land Surface Temperature and Emissivity 1km
 
 # https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MCD12Q1
+
 def download_map(country_code,
                  state_name,
                  date_range=('2021-01-01','2022-12-30'),
-                 modis_collection='006/MYD11A2',
+                 modis_collection='006/MOD09A1',
                  num_pixels=1000):
     Map = geemap.Map()
     lower_case_country_code = country_code.lower
@@ -62,11 +63,11 @@ def download_map(country_code,
     return df
 
 
-def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MYD11A2', num_pixels=1000):
+def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MOD09A1', num_pixels=1000):
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
-    for state_name in state_names[0:]:
+    for state_name in state_names[17:]:
 
         list_df = []
         year_lst = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2017,2018,2019,2020,2021]
@@ -79,7 +80,7 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
             list_df.append(df)
 
         df = pd.concat(list_df)
-        df.to_pickle(f'../raw_data/raw_pixels/USA/Surface_temp_1000p_scale250_2002-2022-minus2011/{state_name}.zip')
+        df.to_pickle(f'../raw_data/raw_pixels/USA/spectral_ref_1000p_scale250_2002-2022-minus2011/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
 
 
