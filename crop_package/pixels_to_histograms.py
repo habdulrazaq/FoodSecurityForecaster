@@ -48,3 +48,4 @@ def build_histograms(country_code='SSD', num_bins=30):
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])
+
