@@ -4,7 +4,7 @@ import numpy as np
 def get_X_y(country_code='USA'):
 
     # 0. import df
-    X_data = np.load(f'../data/USA_kansas_data.npz')
+    X_data = np.load(f'../data/USA_Alabama_data.npz')
     X = X_data['X']
 
     df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/soybeans_usa.csv')
@@ -22,6 +22,7 @@ def get_X_y(country_code='USA'):
     X = X[:,X_in_y]
 
     year_groups = df_y[df_y['STATE'].apply(lambda s: s in X_counties)] \
+                    [df_y['YEAR'] != 2011] \
                       .sort_values('STATE') \
                       .groupby('YEAR')
 
@@ -29,6 +30,7 @@ def get_X_y(country_code='USA'):
 
     y = np.zeros(X.shape[:2])
     for i, (year, group) in enumerate(year_groups):
+        print(group)
         y[i] = group['YIELD']
 
 
