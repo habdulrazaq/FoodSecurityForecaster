@@ -4,11 +4,11 @@ from tensorflow.keras import optimizers
 
 def lstm():
 
-    norm_layer = layers.Normalization(input_shape=(46, 10, 4))
-    #(14, 46, 10, 4)
+    norm_layer = layers.Normalization(input_shape=(46, 30, 8))
+    #(14, 46, 30, 8)
     model = models.Sequential([
         norm_layer,
-        layers.Reshape((46, 10 * 4)),
+        layers.Reshape((46, 30 * 8)),
         layers.LSTM(units=128, activation='tanh', recurrent_dropout=0.1),
         layers.LayerNormalization(),
         layers.Dense(64, activation='relu'),
