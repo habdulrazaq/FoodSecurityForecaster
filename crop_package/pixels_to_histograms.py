@@ -8,7 +8,7 @@ import sys
 
 def build_histograms(country_code='SSD', num_bins=10):
 
-    data_path = f'../raw_data/raw_pixels/USA/Surface_tem_1000p_scale250_2002-2022-new'
+    data_path = f'../raw_data/raw_pixels/USA/Surface_temp_1000p_scale250_2002-2022-minus2011'
 
     df_list = []
 
@@ -44,7 +44,7 @@ def build_histograms(country_code='SSD', num_bins=10):
                     X[year_index,county_index,sample_index,:,band_index] = hist
 
     county_names = np.array([df.attrs['state_name'] for df in df_list])
-    np.savez_compressed(f'../data/{country_code}_Alabama_data.npz', X=X, county_names=county_names)
+    np.savez_compressed(f'../data/USA_data_MYD11A2.npz', X=X, county_names=county_names)
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])
