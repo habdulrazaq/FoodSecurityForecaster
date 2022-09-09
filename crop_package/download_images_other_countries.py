@@ -67,6 +67,7 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/USA/admin1/USA.shp'
 
+
     for state_name in state_names[17:]:
 
         list_df = []
