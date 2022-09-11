@@ -55,4 +55,3 @@ plt.semilogy(t, history.history['loss'], label='train loss')
 plt.semilogy(t, history.history['val_loss'], label='val loss')
 plt.legend()
 plt.show()
-
