@@ -66,6 +66,7 @@ def fit_model(build_model=cnn):
     print("model test rmse:", model.evaluate(X_test, y_test) ** 0.5)
     print("baseline test rmse:", baseline_score ** 0.5)
 
+    print(model.predict(X_test))
     return model, history
 
 model, history = fit_model(cnn)

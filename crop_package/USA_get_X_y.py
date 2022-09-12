@@ -1,15 +1,16 @@
 import pandas as pd
 import numpy as np
-
+import tensorflow as tf
 
 def get_X_y(country_code='USA'):
 
     # 0. import df
-    X_data = np.load(f'../data/kansas_MOD09A1_band5to12_30bins.npz')
-    X = X_data['X'][:-1, :, :, :, :]
+    X_data = np.load(f'../data/INDIA_COCONUT_states_data_MOD09A1.npz')  #8states_data_both_sat
+    X = X_data['X']
 
-    df_y = pd.read_csv(
-        f'../raw_data/Crop yield data/COUNTY_level_annual/soybeans_usa.csv')
+    print(X.shape)  #  NEW SHAPE SHOULD BE: 18,8,46,30,13
+
+    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/india_COCONUT.csv')
 
     df_y['STATE'] = df_y['STATE'].str.lower()
 

@@ -11,7 +11,7 @@ def cnn():
         layers.Dropout(0.3),
         layers.LayerNormalization(),
         layers.MaxPooling2D(strides=(2, 2), pool_size=(2, 2)),
-        layers.Conv2D(64, kernel_size=(3, 3), activation="relu"),
+        layers.Conv2D(128, kernel_size=(3, 3), activation="relu"),
         layers.Dropout(0.3),
         layers.LayerNormalization(),
         layers.MaxPooling2D(strides=(2, 2), pool_size=(2, 2)),
