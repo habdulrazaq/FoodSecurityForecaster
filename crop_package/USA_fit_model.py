@@ -69,11 +69,11 @@ def fit_model(build_model=cnn):
     # print(model.predict(X_test))
     return model, history
 
-# model, history = fit_model(lstm)
+model, history = fit_model(cnn)
 
 
-# t = np.arange(len(history.history['loss']))
-# plt.semilogy(t, history.history['loss'], label='train loss')
-# plt.semilogy(t, history.history['val_loss'], label='val loss')
-# plt.legend()
-# plt.show()
+t = np.arange(len(history.history['loss']))
+plt.semilogy(t, history.history['loss'], label='train loss')
+plt.semilogy(t, history.history['val_loss'], label='val loss')
+plt.legend()
+plt.show()

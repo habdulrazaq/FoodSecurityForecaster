@@ -5,12 +5,12 @@ import tensorflow as tf
 def get_X_y(country_code='USA'):
 
     # 0. import df
-    X_data = np.load(f'../data/USA_30states_data_MOD09A1.npz')  #8states_data_both_sat
+    X_data = np.load(f'../data/INDIA_SUGARCANE_states_data_MOD09A1.npz')  #8states_data_both_sat
     X = X_data['X']
 
     print(X.shape)  #  NEW SHAPE SHOULD BE: 18,8,46,30,13
 
-    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/soybeans_usa.csv')
+    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/india_SUGARCANE.csv')
 
     df_y['STATE'] = df_y['STATE'].str.lower()
 
