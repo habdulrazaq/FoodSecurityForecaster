@@ -7,6 +7,7 @@ def get_X_y(country_code='USA'):
     # 0. import df
     X_data = np.load(f'../data/INDIA_COCONUT_states_data_MOD09A1.npz')  #8states_data_both_sat
     X = X_data['X']
+    print("X shape:", X.shape)
 
     print(X.shape)  #  NEW SHAPE SHOULD BE: 18,8,46,30,13
 
@@ -16,7 +17,7 @@ def get_X_y(country_code='USA'):
 
     state_names = [name.lower() for name in X_data['county_names']]
 
-    X_counties = set(state_names)
+    X_counties = set(state_names) - {'florida'}
     y_counties = set(df_y['STATE'])
 
     X_in_y = np.array([name in y_counties for name in state_names])
@@ -30,7 +31,6 @@ def get_X_y(country_code='USA'):
 
     y = np.zeros(X.shape[:2])
     for i, (year, group) in enumerate(year_groups):
-        print(group)
         y[i] = group['YIELD']
 
     return X, y

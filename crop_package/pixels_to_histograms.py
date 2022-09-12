@@ -29,8 +29,10 @@ def build_histograms(country_code='SSD', num_bins=30):
         bins[0] = -float('inf')
         bins[-1] = float('inf')
 
+    years = stacked_df['date'].dt.year.unique()
+
     num_bands = stacked_df['band'].nunique()
-    num_years = stacked_df['date'].dt.year.nunique()
+    num_years = len(years)
     num_counties = len(df_list)
     num_samples = 46
 
