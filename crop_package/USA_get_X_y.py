@@ -1,14 +1,17 @@
 import pandas as pd
 import numpy as np
+import tensorflow as tf
 
 def get_X_y(country_code='USA'):
 
     # 0. import df
-    X_data = np.load(f'../data/USA_Alabama_data.npz')
+    X_data = np.load(f'../data/INDIA_COCONUT_states_data_MOD09A1.npz')  #8states_data_both_sat
     X = X_data['X']
     print("X shape:", X.shape)
 
-    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/soybeans_usa.csv')
+    print(X.shape)  #  NEW SHAPE SHOULD BE: 18,8,46,30,13
+
+    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/india_COCONUT.csv')
 
     df_y['STATE'] = df_y['STATE'].str.lower()
 
@@ -17,9 +20,9 @@ def get_X_y(country_code='USA'):
     X_counties = set(state_names) - {'florida'}
     y_counties = set(df_y['STATE'])
 
-    X_in_y = np.array([name in y_counties and name != 'florida' for name in state_names])
+    X_in_y = np.array([name in y_counties for name in state_names])
 
-    X = X[:,X_in_y]
+    X = X[:, X_in_y]
 
     year_groups = df_y[df_y['STATE'].apply(lambda s: s in X_counties)] \
                     [df_y['YEAR'] != 2011] \
@@ -28,16 +31,11 @@ def get_X_y(country_code='USA'):
 
     y = np.zeros(X.shape[:2])
     for i, (year, group) in enumerate(year_groups):
-<<<<<<< HEAD
-        if year == 2022:
-            break
-=======
-        print(group)
->>>>>>> ded21f21114b618e1cb5671a53682ef77f12b366
         y[i] = group['YIELD']
-
 
     return X, y
 
+
 def split_years(*arrays, test_size=1):
-    return sum(((array[:-test_size], array[-test_size:]) for array in arrays), ())
+    return sum(((array[:-test_size], array[-test_size:]) for array in arrays),
+               ())
