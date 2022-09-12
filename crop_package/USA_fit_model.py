@@ -16,15 +16,15 @@ def fit_model(build_model=cnn):
 
     X, y = USA_get_X_y.get_X_y()
 
-    plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
-    plt.show()
+    #plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
+    #plt.show()
 
     X_train, X_test, y_train, y_test = USA_get_X_y.split_years(X, y, test_size=2)
 
     X_train, X_valid, y_train, y_valid = USA_get_X_y.split_years(X_train, y_train, test_size=2)
 
     es = EarlyStopping(monitor = "val_loss",
-                       patience = 500,
+                       patience = 100,
                        mode = "min",
                        restore_best_weights = True)
 
@@ -33,7 +33,7 @@ def fit_model(build_model=cnn):
     y_baseline = baseline.predict(X_test)
     baseline_score = mean_squared_error(y_test, y_baseline)
 
-    print(X.shape, X_train.shape)
+    # print(X.shape, X_train.shape)
     X_train = X_train.reshape((-1,) + X_train.shape[2:])
     X_valid = X_valid.reshape((-1,) + X_valid.shape[2:])
     X_test = X_test.reshape((-1,) + X_test.shape[2:])
@@ -45,12 +45,12 @@ def fit_model(build_model=cnn):
     y_test = y_test.flatten()
     y = y.flatten()
 
-    print(y)
+    # print(y)
 
 
 
-    print(X_train.shape)
-    print(y_train.shape)
+    # print(X_train.shape)
+    # print(y_train.shape)
     norm_layer.adapt(X_train)
     history = model.fit(X_train, y_train,
                         validation_data = (X_valid, y_valid),
@@ -60,20 +60,20 @@ def fit_model(build_model=cnn):
                         callbacks=[es],
                         verbose = 1)
 
-    plt.scatter(np.arange(len(y)), y, color='green')
-    plt.scatter(np.arange(len(y)), model.predict(X), color='red')
-    plt.show()
-    print("model test rmse:", model.evaluate(X_test, y_test) ** 0.5)
-    print("baseline test rmse:", baseline_score ** 0.5)
+    # plt.scatter(np.arange(len(y)), y, color='green')
+    # plt.scatter(np.arange(len(y)), model.predict(X), color='red')
+    # plt.show()
+    # print("model test rmse:", model.evaluate(X_test, y_test) ** 0.5)
+    # print("baseline test rmse:", baseline_score ** 0.5)
 
-    print(model.predict(X_test))
+    # print(model.predict(X_test))
     return model, history
 
-model, history = fit_model(cnn)
+# model, history = fit_model(lstm)
 
 
-t = np.arange(len(history.history['loss']))
-plt.semilogy(t, history.history['loss'], label='train loss')
-plt.semilogy(t, history.history['val_loss'], label='val loss')
-plt.legend()
-plt.show()
+# t = np.arange(len(history.history['loss']))
+# plt.semilogy(t, history.history['loss'], label='train loss')
+# plt.semilogy(t, history.history['val_loss'], label='val loss')
+# plt.legend()
+# plt.show()
