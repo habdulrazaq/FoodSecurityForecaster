@@ -10,6 +10,8 @@ import USA_get_X_y
 
 import matplotlib.pyplot as plt
 
+import sys
+
 def fit_model(build_model=cnn, verbose=True):
 
     model, norm_layer = build_model()
@@ -64,7 +66,7 @@ def fit_model(build_model=cnn, verbose=True):
                         validation_data = (X_valid, y_valid),
                         shuffle = True,
                         batch_size = 32,
-                        epochs = 500,
+                        epochs = 5,
                         callbacks=[es],
                         verbose = verbose)
     if verbose:
@@ -85,11 +87,7 @@ def fit_model(build_model=cnn, verbose=True):
 
     return model, history
 
-model, history = fit_model(cnn)
-
-
-t = np.arange(len(history.history['loss']))
-plt.semilogy(t, history.history['loss'], label='train loss')
-plt.semilogy(t, history.history['val_loss'], label='val loss')
-plt.legend()
-plt.show()
+if __name__ == '__main__':
+    model, history = fit_model(cnn)
+    if len(sys.argv) > 1:
+        model.save(sys.argv[1])
