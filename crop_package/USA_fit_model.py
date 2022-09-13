@@ -18,25 +18,16 @@ def fit_model(build_model=cnn, verbose=True):
 
     X, y, _ = USA_get_X_y.get_X_y()
 
-
-    #plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
-    #plt.show()
-
     if verbose:
         plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
         plt.show()
-
 
     X_train, X_test, y_train, y_test = USA_get_X_y.split_years(X, y, test_size=2)
 
     X_train, X_valid, y_train, y_valid = USA_get_X_y.split_years(X_train, y_train, test_size=2)
 
     es = EarlyStopping(monitor = "val_loss",
-
-                       patience = 100,
-
                        patience = 50,
-
                        mode = "min",
                        restore_best_weights = True)
 
@@ -50,7 +41,9 @@ def fit_model(build_model=cnn, verbose=True):
     baseline_r2 = r2_score(y_test.flatten(), y_baseline.flatten())
     baseline_mse = mean_squared_error(y_test.flatten(), y_baseline.flatten())
 
-
+    if verbose:
+        print("baseline R^2:", baseline_r2)
+        print("baseline mse:", baseline_mse)
 
         print(X.shape, X_train.shape)
     X_train = X_train.reshape((-1,) + X_train.shape[-3:])
@@ -65,6 +58,8 @@ def fit_model(build_model=cnn, verbose=True):
     y_test_full_year = y_test_full_year.flatten()
     y = y.flatten()
 
+    if verbose:
+        print(X_train.shape, y_train.shape)
 
     norm_layer.adapt(X_train)
     history = model.fit(X_train, y_train,
@@ -73,17 +68,6 @@ def fit_model(build_model=cnn, verbose=True):
                         batch_size = 32,
                         epochs = 5,
                         callbacks=[es],
-
-                        verbose = 1)
-
-    # plt.scatter(np.arange(len(y)), y, color='green')
-    # plt.scatter(np.arange(len(y)), model.predict(X), color='red')
-    # plt.show()
-    # print("model test rmse:", model.evaluate(X_test, y_test) ** 0.5)
-    # print("baseline test rmse:", baseline_score ** 0.5)
-
-    # print(model.predict(X_test))
-
                         verbose = verbose)
     if verbose:
         plt.scatter(np.arange(len(y)), y, color='green')

@@ -25,7 +25,7 @@ state_names = pd.read_csv('../raw_data/state_names_IND_working_states.csv')['NAM
 def download_map(country_code,
                  state_name,
                  date_range=('2002-01-01','2022-12-30'),
-                 modis_collection='006/MOD09A1',
+                 modis_collection='006/MOD11A2',
                  num_pixels=1000):
     Map = geemap.Map()
     lower_case_country_code = country_code.lower
@@ -63,7 +63,7 @@ def download_map(country_code,
     return df
 
 
-def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MOD09A1', num_pixels=1000):
+def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_collection='006/MOD11A2', num_pixels=1000):
     lower_case_country_code = country_code.lower
     states_shp = f'../raw_data/IND/admin1/ind.shp'
                   #working surface refl. layers: [8,9,10,13,15, 16, 17,18,20,22-25,27, 29-30, 32-36,38-43,46,48-49]
@@ -72,7 +72,7 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
 
         list_df = []
         year_lst = [2003,2004,] #2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2017,2018,2019,2020,2021
-        for start_year in range(2022,2023):
+        for start_year in range(2003,2013):
             print(f"working on {start_year}")
 
             print(f'working on {state_name}...')
@@ -81,7 +81,7 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
             list_df.append(df)
 
         df = pd.concat(list_df)
-        df.to_pickle(f'../raw_data/raw_pixels/INDIA/surf_ref_1000p_scale250_2022/{state_name}.zip')
+        df.to_pickle(f'../raw_data/raw_pixels/INDIA/temperature_1000p_scale250_2003-2012/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
 
 

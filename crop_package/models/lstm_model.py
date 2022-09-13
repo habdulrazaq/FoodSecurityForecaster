@@ -8,7 +8,7 @@ def lstm():
     #(14, 46, 30, 8)
     model = models.Sequential([
         norm_layer,
-        layers.Reshape((46, 30 * 6)),
+        layers.Reshape((46, 30 * 8)),
         layers.LSTM(units=128, activation='tanh', recurrent_dropout=0.1),
         layers.LayerNormalization(),
         layers.Dense(64, activation='relu'),
