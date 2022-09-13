@@ -80,6 +80,8 @@ def load_all(country_code='SSD', date_range=('2000-01-01', '2015-01-01'), modis_
             df = download_map(country_code, state_name, (f'{start_year}-01-01', f'{start_year+1}-01-01'), modis_collection, num_pixels)
             list_df.append(df)
 
+        exit(0)
+
         df = pd.concat(list_df)
         df.to_pickle(f'../raw_data/raw_pixels/INDIA/temperature_1000p_scale250_2003-2012/{state_name}.zip')
         print(f"Downloaded data for {state_name}...")
