@@ -14,6 +14,7 @@ def fit_model(build_model=cnn):
 
     model, norm_layer = build_model()
 
+
     X, y = USA_get_X_y.get_X_y()
 
     #plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
