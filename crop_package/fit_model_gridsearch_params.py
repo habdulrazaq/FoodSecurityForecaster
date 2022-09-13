@@ -79,6 +79,6 @@ if __name__== "__main__":
     # The hyperparameter search is complete. The optimal number of units in the dense
     # layer is {best_hps.get('dense_1')}.
 
-    # The hyperparameter search is complete. The optimal number of units in the last dropout
+    # The hyperparameter search s complete. The optimal number of units in the last dropout
     # layer is {best_hps.get('dropout_3')}.
     )
