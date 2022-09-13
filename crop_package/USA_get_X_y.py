@@ -9,11 +9,13 @@ def get_X_y(X_only=False, max_masked=0.5):
         max_masked: maximum proportion of samples to mask from the end of the year
     """
 
-    X_data = np.load('../data/INDIA_MOD09A1.npz')
     X = X_data['X']
 
     #(num_years,num_counties,num_samples,num_bins,num_bands)
     print("X shape:", X.shape)
+
+
+    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/india_SUGARCANE.csv')
 
     if X_only:
         info = {
@@ -23,6 +25,7 @@ def get_X_y(X_only=False, max_masked=0.5):
         return X, info
 
     df_y = pd.read_csv('../raw_data/Crop yield data/COUNTY_level_annual/india_RICE.csv')
+
 
     df_y['STATE'] = df_y['STATE'].str.lower()
 
