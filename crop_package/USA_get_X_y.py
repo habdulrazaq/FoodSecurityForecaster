@@ -2,40 +2,71 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 
-def get_X_y(country_code='USA'):
+def get_X_y(X_only=False, max_masked=0.5):
+    """
+    Args:
+        X_only: Whether to only return X
+        max_masked: maximum proportion of samples to mask from the end of the year
+    """
 
-    # 0. import df
-    X_data = np.load(f'../data/INDIA_SUGARCANE_states_data_MOD09A1.npz')  #8states_data_both_sat
+    X_data = np.load('../data/INDIA_MOD09A1.npz')
     X = X_data['X']
 
-    print(X.shape)  #  NEW SHAPE SHOULD BE: 18,8,46,30,13
+    #(num_years,num_counties,num_samples,num_bins,num_bands)
+    print("X shape:", X.shape)
 
-    df_y = pd.read_csv(f'../raw_data/Crop yield data/COUNTY_level_annual/india_SUGARCANE.csv')
+    if X_only:
+        info = {
+            'years': X_data['years'],
+            'county_names': X_data['county_names'],
+        }
+        return X, info
+
+    df_y = pd.read_csv('../raw_data/Crop yield data/COUNTY_level_annual/india_RICE.csv')
 
     df_y['STATE'] = df_y['STATE'].str.lower()
 
     state_names = [name.lower() for name in X_data['county_names']]
 
     X_counties = set(state_names)
-    y_counties = set(df_y['STATE'])
+    X_years = set(X_data['years'])
 
-    X_in_y = np.array([name in y_counties for name in state_names])
+    y_counties = set([name.lower() for name in df_y['STATE']])
+    y_years = set(df_y['YEAR'])
 
-    X = X[:, X_in_y]
+    X_county_in_y = np.array([name in y_counties for name in state_names])
+    X_year_in_y = np.array([year in y_years for year in X_data['years']])
 
-    year_groups = df_y[df_y['STATE'].apply(lambda s: s in X_counties)] \
-                    [df_y['YEAR'] != 2011] \
-                      .sort_values('STATE') \
+    X = X[X_year_in_y]
+    X = X[:,X_county_in_y]
+
+    df_y = df_y[df_y['STATE'].apply(lambda s: s in X_counties) & df_y['YEAR'].apply(lambda s: s in X_years)]
+
+    year_groups = df_y.sort_values('STATE') \
                       .groupby('YEAR')
 
-    y = np.zeros(X.shape[:2])
+    y = np.zeros(X.shape[:2] + (1,))
     for i, (year, group) in enumerate(year_groups):
-        print(group)
-        y[i] = group['YIELD']
+        y[i,:,0] = group['YIELD']
 
-    return X, y
+    info = {
+        'years': [year for year in X_data['years'] if year in y_years],
+        'county_names': [name for name in X_data['county_names'] if name.lower() in y_counties],
+    }
 
+    if max_masked:
+        xs = []
+        ys = []
+        for i in range(int(X.shape[2] * max_masked)):
+            X_i = np.copy(X)
+            if i != 0:
+                X_i[:,:,-i:] = 0
+            xs.append(X_i)
+            ys.append(y)
+        X = np.stack(xs, axis=2)
+        y = np.stack(ys, axis=2)
+
+    return X, y, info
 
 def split_years(*arrays, test_size=1):
-    return sum(((array[:-test_size], array[-test_size:]) for array in arrays),
-               ())
+    return sum(((array[:-test_size], array[-test_size:]) for array in arrays), ())
