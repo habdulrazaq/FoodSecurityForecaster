@@ -9,6 +9,7 @@ def get_X_y(X_only=False, max_masked=0.5):
         max_masked: maximum proportion of samples to mask from the end of the year
     """
 
+<<<<<<< Updated upstream:crop_package/get_X_y_USA_INDIA.py
 <<<<<<< HEAD:crop_package/get_X_y_USA_INDIA.py
     # 0. import df
     X_data = np.load(f'../data/USA_30states_data_MOD09A1.npz')
@@ -21,6 +22,9 @@ def get_X_y(X_only=False, max_masked=0.5):
     print(X.shape)
 =======
     X_data = np.load('../data/INDIA_MOD09A1.npz')
+=======
+    X_data = np.load('../data/INDIA_RICE_states_data_MOD09A1.npz')
+>>>>>>> Stashed changes:crop_package/USA_get_X_y.py
     X = X_data['X']
 
     #(num_years,num_counties,num_samples,num_bins,num_bands)
@@ -71,6 +75,7 @@ def get_X_y(X_only=False, max_masked=0.5):
         y[i] = group['YIELD']
 =======
     X = X[X_year_in_y]
+
     X = X[:,X_county_in_y]
 
     df_y = df_y[df_y['STATE'].apply(lambda s: s in X_counties) & df_y['YEAR'].apply(lambda s: s in X_years)]

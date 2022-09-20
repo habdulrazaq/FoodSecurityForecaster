@@ -29,12 +29,16 @@ def fit_model(build_model=cnn, drop_years=1):
 =======
 import sys
 
-def fit_model(build_model=cnn, verbose=True):
+def fit_model(build_model=cnn, max_masked=0, verbose=True):
 
     model, norm_layer = build_model()
 
+<<<<<<< Updated upstream:crop_package/fit_model_USA_INDIA.py
 
     X, y, _ = USA_get_X_y.get_X_y()
+=======
+    X, y, _ = USA_get_X_y.get_X_y(max_masked=max_masked)
+>>>>>>> Stashed changes:crop_package/USA_fit_model.py
 
 
     if verbose:
@@ -51,8 +55,9 @@ def fit_model(build_model=cnn, verbose=True):
                        mode = "min",
                        restore_best_weights = True)
 
-    X_test_full_year = X_test[:,:,:1]
-    y_test_full_year = y_test[:,:,:1]
+    if max_masked:
+        X_test_full_year = X_test[:,:,:1]
+        y_test_full_year = y_test[:,:,:1]
 
 
     baseline = BaselineModel()
@@ -69,13 +74,15 @@ def fit_model(build_model=cnn, verbose=True):
     X_train = X_train.reshape((-1,) + X_train.shape[-3:])
     X_valid = X_valid.reshape((-1,) + X_valid.shape[-3:])
     X_test = X_test.reshape((-1,) + X_test.shape[-3:])
-    X_test_full_year = X_test_full_year.reshape((-1,) + X_test_full_year.shape[-3:])
+    if max_masked:
+        X_test_full_year = X_test_full_year.reshape((-1,) + X_test_full_year.shape[-3:])
     X = X.reshape((-1,) + X.shape[-3:])
 
     y_train = y_train.flatten()
     y_valid = y_valid.flatten()
     y_test = y_test.flatten()
-    y_test_full_year = y_test_full_year.flatten()
+    if max_masked:
+        y_test_full_year = y_test_full_year.flatten()
     y = y.flatten()
 
 <<<<<<< HEAD:crop_package/fit_model_USA_INDIA.py
@@ -92,6 +99,7 @@ def fit_model(build_model=cnn, verbose=True):
                         validation_data = (X_valid, y_valid),
                         shuffle = True,
                         batch_size = 32,
+<<<<<<< Updated upstream:crop_package/fit_model_USA_INDIA.py
 <<<<<<< HEAD:crop_package/fit_model_USA_INDIA.py
                         epochs = 300,
                         callbacks=[es],
@@ -132,6 +140,9 @@ if __name__ == "__main__":
     plt.show()
 =======
                         epochs = 5,
+=======
+                        epochs = 500,
+>>>>>>> Stashed changes:crop_package/USA_fit_model.py
                         callbacks=[es],
                         verbose = verbose)
     if verbose:
@@ -139,14 +150,17 @@ if __name__ == "__main__":
         plt.scatter(np.arange(len(y)), model.predict(X), color='red')
         plt.show()
     y_pred = model.predict(X_test).flatten()
-    y_pred_full_year = model.predict(X_test_full_year).flatten()
+
+    if max_masked:
+        y_pred_full_year = model.predict(X_test_full_year).flatten()
 
 
     if verbose:
         print("model R^2:", r2_score(y_pred, y_test.flatten()))
         print("model mse:", mean_squared_error(y_pred, y_test.flatten()))
-        print("full year model R^2:", r2_score(y_pred_full_year, y_test_full_year.flatten()))
-        print("full year model mse:", mean_squared_error(y_pred_full_year, y_test_full_year.flatten()))
+        if max_masked:
+            print("full year model R^2:", r2_score(y_pred_full_year, y_test_full_year.flatten()))
+            print("full year model mse:", mean_squared_error(y_pred_full_year, y_test_full_year.flatten()))
         print("baseline R^2:", baseline_r2)
         print("baseline mse:", baseline_mse)
 

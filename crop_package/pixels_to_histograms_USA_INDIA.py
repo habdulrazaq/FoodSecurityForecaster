@@ -73,11 +73,15 @@ def build_histograms(country_code='IND', num_bins=30):
         exit(0)
 
     county_names = np.array([df.attrs['state_name'] for df in df_list])
+<<<<<<< Updated upstream:crop_package/pixels_to_histograms_USA_INDIA.py
 <<<<<<< HEAD:crop_package/pixels_to_histograms_USA_INDIA.py
     np.savez_compressed(f'../data/USA_19_soybeans_states_data_2013-2022_MOD09A1.npz', X=X, county_names=county_names)
 =======
     np.savez_compressed('../data/INDIA_MOD09A1.npz', X=X, county_names=county_names, years=years.to_numpy())
 >>>>>>> 3f0734057fca272d5ba8a59b6361ec90a31c5b59:crop_package/pixels_to_histograms_india.py
+=======
+    np.savez_compressed('../data/INDIA_WHEAT_states_data_MOD09A1.npz', X=X, county_names=county_names, years=years.to_numpy())
+>>>>>>> Stashed changes:crop_package/pixels_to_histograms_india.py
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])

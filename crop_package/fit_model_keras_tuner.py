@@ -35,12 +35,12 @@ def hyper_cnn(hp):
     return model
 
 if __name__== "__main__":
-    X, y = USA_get_X_y.get_X_y()
+    X, y, _ = USA_get_X_y.get_X_y()
     X_train, X_test, y_train, y_test = USA_get_X_y.split_years(X, y, test_size=2)
     X_train, X_valid, y_train, y_valid = USA_get_X_y.split_years(X_train, y_train, test_size=2)
-    X_train = X_train.reshape((-1,) + X_train.shape[2:])
-    X_valid = X_valid.reshape((-1,) + X_valid.shape[2:])
-    X_test = X_test.reshape((-1,) + X_test.shape[2:])
+    X_train = X_train.reshape((-1,) + X_train.shape[-3:])
+    X_valid = X_valid.reshape((-1,) + X_valid.shape[-3:])
+    X_test = X_test.reshape((-1,) + X_test.shape[-3:])
 
 
     X = X.reshape((-1,) + X.shape[2:])
@@ -52,7 +52,7 @@ if __name__== "__main__":
 
     tuner = kt.Hyperband(hyper_cnn,
                      objective='val_loss',
-                     max_epochs=0,
+                     max_epochs=10,
                      factor=3,
                      directory='my_dir',
                      project_name='intro_to_kt')
@@ -65,24 +65,35 @@ if __name__== "__main__":
 
     print(f"""
     The hyperparameter search is complete. The optimal number of units in the 1st densely-connected
-    layer is {best_hps}."""
+    layer is {best_hps}.
 
+<<<<<<< Updated upstream:crop_package/fit_model_keras_tuner.py
 <<<<<<< HEAD:crop_package/fit_model_keras_tuner.py
 
 =======
     # The hyperparameter search is complete. The optimal number of units in the 1st dropout
     # layer is {best_hps.get('dropout_1')}.
+=======
+    The hyperparameter search is complete. The optimal number of units in the 1st dropout
+    layer is {best_hps.get('dropout_1')}.
+>>>>>>> Stashed changes:crop_package/fit_model_gridsearch_params.py
 
-    # The hyperparameter search is complete. The optimal number of units in the 2nd densely-connected
-    # layer is {best_hps.get('conv2d_2')}.
+    The hyperparameter search is complete. The optimal number of units in the 2nd densely-connected
+    layer is {best_hps.get('conv2d_2')}.
 
-    # The hyperparameter search is complete. The optimal number of units in the 2nd dropout
-    # layer is {best_hps.get('dropout_2')}.
+    The hyperparameter search is complete. The optimal number of units in the 2nd dropout
+    layer is {best_hps.get('dropout_2')}.
 
-    # The hyperparameter search is complete. The optimal number of units in the dense
-    # layer is {best_hps.get('dense_1')}.
+    The hyperparameter search is complete. The optimal number of units in the dense
+    layer is {best_hps.get('dense_1')}.
 
+<<<<<<< Updated upstream:crop_package/fit_model_keras_tuner.py
     # The hyperparameter search s complete. The optimal number of units in the last dropout
     # layer is {best_hps.get('dropout_3')}.
 >>>>>>> 3f0734057fca272d5ba8a59b6361ec90a31c5b59:crop_package/fit_model_gridsearch_params.py
     )
+=======
+    The hyperparameter search s complete. The optimal number of units in the last dropout
+    layer is {best_hps.get('dropout_3')}.
+    """)
+>>>>>>> Stashed changes:crop_package/fit_model_gridsearch_params.py
