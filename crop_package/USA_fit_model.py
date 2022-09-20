@@ -16,7 +16,9 @@ def fit_model(build_model=cnn, verbose=True):
 
     model, norm_layer = build_model()
 
+
     X, y, _ = USA_get_X_y.get_X_y()
+
 
     if verbose:
         plt.scatter(np.arange(y.flatten().shape[0]), y.flatten())
