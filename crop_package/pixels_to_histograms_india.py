@@ -6,7 +6,7 @@ import numpy as np
 import os
 import sys
 
-def build_histograms(country_code='SSD', num_bins=30):
+def build_histograms(country_code='IND', num_bins=30):
 
     data_path = f'../raw_data/raw_pixels/INDIA/temp'
 
@@ -29,10 +29,12 @@ def build_histograms(country_code='SSD', num_bins=30):
         bins[0] = -float('inf')
         bins[-1] = float('inf')
 
+    years = stacked_df['date'].dt.year.drop_duplicates()
+
     num_bands = stacked_df['band'].nunique()
-    num_years = stacked_df['date'].dt.year.nunique()
+    num_years = years.nunique()
     num_counties = len(df_list)
-    num_samples = 46
+    num_samples = stacked_df['date'].groupby(stacked_df['date'].dt.year).nunique().max()
 
     X = np.zeros((num_years, num_counties, num_samples, num_bins, num_bands))
 
@@ -44,7 +46,7 @@ def build_histograms(country_code='SSD', num_bins=30):
                     X[year_index,county_index,sample_index,:,band_index] = hist
 
     county_names = np.array([df.attrs['state_name'] for df in df_list])
-    np.savez_compressed(f'../data/INDIA_SUGARCANE_states_data_MO.npz', X=X, county_names=county_names)
+    np.savez_compressed('../data/INDIA_MOD09A1.npz', X=X, county_names=county_names, years=years.to_numpy())
 
 if __name__ == "__main__":
     build_histograms(sys.argv[1])
