@@ -10,7 +10,7 @@ def hyper_cnn(hp):
     dropout_1 = hp.Float('dropout_1', min_value=.2, max_value=.5, step=.05)
     conv2d_2 = hp.Int('conv2d_2', min_value=2, max_value=120, step=16)
     dropout_2 = hp.Float('dropout_2', min_value=.2, max_value=.5, step=.05)
-    dense_1 = hp.Int('dense_1', min_value=1, max_value = 30, step=1)
+    dense_1 = hp.Int('dense_1', min_value=1, max_value = 40, step=1)
     dropout_3 = hp.Float('dropout_3', min_value=.2, max_value=.5, step=.05)
 
     model = models.Sequential([
@@ -67,5 +67,22 @@ if __name__== "__main__":
     The hyperparameter search is complete. The optimal number of units in the 1st densely-connected
     layer is {best_hps}."""
 
-   
+<<<<<<< HEAD:crop_package/fit_model_keras_tuner.py
+
+=======
+    # The hyperparameter search is complete. The optimal number of units in the 1st dropout
+    # layer is {best_hps.get('dropout_1')}.
+
+    # The hyperparameter search is complete. The optimal number of units in the 2nd densely-connected
+    # layer is {best_hps.get('conv2d_2')}.
+
+    # The hyperparameter search is complete. The optimal number of units in the 2nd dropout
+    # layer is {best_hps.get('dropout_2')}.
+
+    # The hyperparameter search is complete. The optimal number of units in the dense
+    # layer is {best_hps.get('dense_1')}.
+
+    # The hyperparameter search s complete. The optimal number of units in the last dropout
+    # layer is {best_hps.get('dropout_3')}.
+>>>>>>> 3f0734057fca272d5ba8a59b6361ec90a31c5b59:crop_package/fit_model_gridsearch_params.py
     )
