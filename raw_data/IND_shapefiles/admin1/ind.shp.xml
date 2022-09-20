@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en">
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>This shapefile was created by the International Food Policy Research Institute (IFPRI) using level two files (for South Central Asia) from the Australian Centre for International Agricultural Research (ACIAR).</origin>
+				<pubdate>2004</pubdate>
+				<title Sync="TRUE">ind</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink Sync="TRUE">\\IFPRIA\VOL1$\GIS\SPARG\data\Production\AGROMAPS_PROJECT\ASIA-IFPRI\Shapefiles\final\IND\admin_1\ind.shp</onlink>
+				<lworkcit>
+					<citeinfo>
+						<origin>Food and Agriculture Organization of the United Nations (FAO)</origin>
+						<pubdate>2004</pubdate>
+						<title>Agro-MAPS (Mapping of Agricultural Production Systems)</title>
+					</citeinfo>
+				</lworkcit>
+				<ftname Sync="TRUE">ind</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>This shapefile displays level one administrative boundaries for the country of India.  This shapefile was created as part of a larger initiative to map a comprehensive collection of crop data for the Asian region.</abstract>
+			<purpose>Agro-MAPS (Mapping of Agricultural Production Systems) is a collaborative initiative by FAO, the International Food Policy Research Institute (IFPRI) and the Center for Sustainability and the Global Environment (SAGE), with the support of national and regional institutions to produce a global spatial database on selected agricultural land use statistics, aggregated by sub-national administrative districts.  The Agro-MAPS database has been created primarily to fill some critical gaps in the range of data needed for undertaking analyses related to land degradation, food security, farming systems studies, nutrient balances and climate change effects.  </purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>2004</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">68.162834</westbc>
+				<eastbc Sync="TRUE">97.403297</eastbc>
+				<northbc Sync="TRUE">37.097012</northbc>
+				<southbc Sync="TRUE">6.747135</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">68.162834</leftbc><rightbc Sync="TRUE">97.403297</rightbc><bottombc Sync="TRUE">6.747135</bottombc><topbc Sync="TRUE">37.097012</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekey>Agro-MAPS</themekey>
+			</theme>
+			<theme>
+				<themekt>FAO</themekt>
+				<themekey>agriculture</themekey>
+				<themekey>agricultural mapping</themekey>
+				<themekey>land-use</themekey>
+				<themekey>Agro-Maps</themekey>
+			</theme>
+		</keywords>
+		<accconst>Online By Registration.</accconst>
+		<useconst>Agro-MAPS contains copyrighted material and/or other proprietary information and thus, are protected by international intellectual property agreements and copyright laws and regulations worldwide.  FAO hereby grants you a license to use, download and print the materials contained in Agro-MAPS solely for your own noncommercial purposes and in accordance with this User Agreement, provided that you do not alter or remove any copyright symbol or other identification concerning authorship of any of the materials contained on or otherwise made available to you in Agro-MAPS.  Except as may otherwise be expressly permitted by applicable law, any copying, browsing, redistribution, publication, or commercial exploitation of any material contained on or otherwise made available to you in Agro-MAPS is strictly prohibited without the prior written permission of AGL or third party copyright owners.  Any requests for permission to reproduce or otherwise use any material contained on or otherwise made available to you in Agro-MAPS other than as provided for herein, should be directed to the AGL at: http://www.fao.org/ag/agl/default.stm (Read text of full user agreement at http://www.fao.org/landandwater/agll/agromaps/default.stm)</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Food and Agriculture Organization of the United Nations (FAO)</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>Viale delle Terme di Caracalla</address>
+					<address>00100</address>
+					<city>Rome</city>
+					<country>Italy</country>
+				</cntaddr>
+				<cntvoice>+39 06 5705 1</cntvoice>
+				<cntfax>+39 06 5705 3152</cntfax>
+				<cntemail>FAO-HQ@fao.org</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<datacred>Food and Agriculture Organization of the United Nations (FAO)</datacred>
+		<native Sync="TRUE">Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 3; ESRI ArcCatalog 8.3.0.800</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<lineage>
+			<procstep>
+				<procdesc Sync="TRUE">Metadata imported.</procdesc>
+				<srcused Sync="TRUE">O:\SPARG\data\Production\AGROMAPS_PROJECT\template\template.shp.xml</srcused>
+				<time Sync="TRUE">11344300</time>
+			</procstep>
+			<procstep>
+				<procdesc Sync="TRUE">Metadata imported.</procdesc>
+				<srcused Sync="TRUE">O:\SPARG\data\Production\AGROMAPS_PROJECT\ASIA-IFPRI\Shapefiles\final\AFG\admin_1\afg.shp.xml</srcused>
+				<time Sync="TRUE">12172400</time>
+			</procstep>
+			<procstep>
+				<procdesc Sync="TRUE">Metadata imported.</procdesc>
+				<srcused Sync="TRUE">O:\SPARG\data\Production\AGROMAPS_PROJECT\ASIA-IFPRI\Shapefiles\final\BGD\admin_1\bgd.shp.xml</srcused>
+				<time Sync="TRUE">13270100</time>
+			</procstep>
+			<procstep>
+				<procdesc Sync="TRUE">Metadata imported.</procdesc>
+				<srcused Sync="TRUE">O:\SPARG\data\Production\AGROMAPS_PROJECT\ASIA-IFPRI\Shapefiles\final\CHN\admin_1\chn.shp.xml</srcused>
+				<time Sync="TRUE">13364800</time>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">D:\TEMP\xmlA.tmp</srcused><date Sync="TRUE">20040309</date><time Sync="TRUE">13405200</time></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="ind">
+				<sdtstype Sync="TRUE">G-polygon</sdtstype>
+				<ptvctcnt Sync="TRUE">32</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="ind"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">32</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geograph>
+				<latres Sync="TRUE">0.000000</latres>
+				<longres Sync="TRUE">0.000000</longres>
+				<geogunit Sync="TRUE">Decimal degrees</geogunit>
+			</geograph>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1927</horizdn>
+				<ellips Sync="TRUE">Clarke 1866</ellips>
+				<semiaxis Sync="TRUE">6378206.400000</semiaxis>
+				<denflat Sync="TRUE">294.978698</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_Assumed_Geographic_1</geogcsn></cordsysn></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="ind">
+			<enttyp>
+				<enttypl Sync="TRUE">ind</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">32</enttypc></enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl Sync="TRUE">UNCODEOR</attrlabl>
+				<attalias Sync="TRUE">UNCODEOR</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">8</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CNTNAME3</attrlabl>
+				<attalias Sync="TRUE">CNTNAME3</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">COUNTRY_NA</attrlabl>
+				<attalias Sync="TRUE">COUNTRY_NA</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">CNTCODE_</attrlabl>
+				<attalias Sync="TRUE">CNTCODE_</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">3</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">NAME1_</attrlabl>
+				<attalias Sync="TRUE">NAME1_</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">25</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCODE</attrlabl>
+				<attalias Sync="TRUE">PCODE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">9</attwidth></attr>
+			<attr>
+				<attrlabl Sync="TRUE">FIRST_NAME</attrlabl>
+			</attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Food and Agriculture Organization of the United Nations (FAO)</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>Viale delle Terme di Caracalla</address>
+					<address>00100</address>
+					<city>Rome</city>
+					<country>Italy</country>
+				</cntaddr>
+				<cntvoice>+39 06 5705 1</cntvoice>
+				<cntfax>+39 06 5705 3152</cntfax>
+				<cntemail>FAQ-HQ@fao.org</cntemail>
+			</cntinfo>
+		</distrib>
+		<resdesc>Agro-MAPS (Mapping of Agricultural Production Systems) Boundary File</resdesc>
+		<distliab>
+You expressly acknowledge and agree that any and all use of Agro-MAPS is at your sole risk. Neither FAO, its employees, agents, third-party content providers, or licensors warrant that access to and use of Agro-MAPS will be free from interruptions or free from errors; nor do they make any warranty as to the results that may be obtained from use of Agro-MAPS, or as to the accuracy, reliability, or content of any information or service provided through Agro-MAPS.
+
+You further expressly acknowledge and agree that information, text, graphics, and hyperlinks provided to you through Agro-MAPS and located on other sites throughout the combined global electronic networks known as the internet and the world-wide-web are provided solely as a resource and a convenience to you.  Such hyperlinks to other sites are not an endorsement by FAO of those sites.  FAO makes no warranty, either express or implied, as to the accuracy, reliability, or content of such information, text, graphics, and hyperlinks. FAO has not tested any software located on other sites and does not make any representations as to the quality, safety, reliability or suitability of such software.
+
+Agro-MAPS is provided "as is" without any warranties of any kind, either express or implied, including but not limited to warranties of title or implied warranties of merchantability or fitness for a particular purpose.  In no event shall FAO be liable to you or any other person for any loss of business or profits, or for any indirect, incidental or consequential damages arising out of any use of, or inability to use, Agro-MAPS, even if FAO was previously advised of the possibility of such damages, or for any other claim by you or any other person.
+
+You acknowledge and agree that the delivery system used for Agro-MAPS, i.e., the Internet and the World Wide Web, are unpredictable and may, from time to time, impede access to Agro-MAPS.  You acknowledge and agree that FAO is in no way responsible to you in any way whatsoever for any interference with your use of or access to Agro-MAPS and you expressly waive and forever discharge and release any and all claims against FAO in connection therewith. (Read full text of the Agro-MAPS user agreement at http://www.fao.org/landandwater/agll/agromaps/default.stm)
+</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize Sync="TRUE">0.785</transize>
+					<dssize Sync="TRUE">0.785</dssize></digtinfo>
+			</digform>
+			<fees>N/A</fees>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20040309</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>International Food Policy Research Institute (IFPRI)</cntorg>
+					<cntper>REQUIRED: The person responsible for the metadata information.</cntper></cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>2033 K Street, N.W.</address>
+					<city>Washington</city>
+					<state>D.C.</state>
+					<postal>20006</postal>
+					<country>United States of America (USA)</country>
+				</cntaddr>
+				<cntvoice>(202) 862-5600</cntvoice>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>None</metac>
+		<metuc>None</metuc>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><MetaID>{F40108E7-3D01-4905-977A-62DC054708E1}</MetaID><CreaDate>20040309</CreaDate><CreaTime>13405200</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20040309</SyncDate><SyncTime>13412100</SyncTime><ModDate>20040309</ModDate><ModTime>13414900</ModTime></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 3; ESRI ArcCatalog 8.3.0.800</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">ind</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">68.162834</westBL><eastBL Sync="TRUE">97.403297</eastBL><northBL Sync="TRUE">37.097012</northBL><southBL Sync="TRUE">6.747135</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">68.162834</westBL><eastBL Sync="TRUE">97.403297</eastBL><northBL Sync="TRUE">37.097012</northBL><southBL Sync="TRUE">6.747135</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\IFPRIA\VOL1$\GIS\SPARG\data\Production\AGROMAPS_PROJECT\ASIA-IFPRI\Shapefiles\final\IND\admin_1\ind.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.785</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">GCS_Assumed_Geographic_1</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="ind"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">32</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20040309</mdDateSt></metadata>
